@@ -1,6 +1,7 @@
 ---
 title: Home
 permalink: /
+layout: public
 ---
 
-Raudasandur Cafe
+Hae!

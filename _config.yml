@@ -1,7 +1,13 @@
-title: Raudasandur Cafe
+title: Rauðasandur Cafe
 
 contact:
   email: contact@raudasandur.is
   address: Lambavatnsvegur, Westfjords
   map: https://osm.org/go/efmp~0sMl-
+
+colors:
+  background: "#FDF6EC"
+  primary: "#DAB88B"
+  secondary: "#F3E9DD"
+  accent: "#B7CADB"
   
