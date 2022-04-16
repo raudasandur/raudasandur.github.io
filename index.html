@@ -28,7 +28,7 @@ Hae!<br>
   {% assign wait = today_times.close | minus: time %}
   Open! Closing in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% elsif time >= today_times.close %}
-  {% assign wait = time | minus: today_times.close | plus: 12 %}
+  {% assign wait = 24 | minus: time | plus: 12 %}
   Closed! Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% endif %}
 
