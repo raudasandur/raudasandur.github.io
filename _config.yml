@@ -5,9 +5,23 @@ contact:
   address: Lambavatnsvegur, Westfjords
   map: https://osm.org/go/efmp~0sMl-
 
-colors:
-  background: "#FDF6EC"
-  primary: "#DAB88B"
-  secondary: "#F3E9DD"
-  accent: "#B7CADB"
+# Pastel
+# colors:
+#   background: "#FDF6EC"
+#   primary: "#DAB88B"
+#   secondary: "#F3E9DD"
+#   accent: "#B7CADB"
   
+# Contrast
+# colors:
+#   background: "#FDE1CB"
+#   primary: "#B78365"
+#   secondary: "#F1CCB1"
+#   accent: "#84ABD7"
+
+# Combined
+colors:
+  background: "#EBD6C2"
+  primary: "#996633"
+  secondary: "#E0C2A3"
+  accent: "#6699CC"
