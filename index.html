@@ -1,0 +1,46 @@
+---
+title: Home
+permalink: /
+layout: public
+---
+
+Hae!<br>
+
+{% assign unix = site.time | date: '%s' %}
+{% assign time = unix | plus: 0 | date: '%H:%M' %}
+{% assign date = unix | date: "%Y-%m-%d" %} 
+
+{% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
+{% assign dotm = unix | date: '%d' %}
+{% assign motw = dotm | minus: dotw %}
+
+{% assign minutes = time | date: '%M' %}
+{% if minutes > "45" %}
+  {% assign time = unix | plus: 3600 | date: '%H:%M' %}
+{% endif %}
+<h3 style="margin-bottom: 0px;">Opening Hours</h3>
+
+{% assign today_times = site.times[dotw] %}
+{% if time < today_times.open %}
+  {% assign wait = today_times.open | minus: time %}
+    Closed! Opening in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+{% elsif time >= today_times.open and time < today_times.close %}
+  {% assign wait = today_times.close | minus: time %}
+  Open! Closing in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+{% elsif time >= today_times.close %}
+  {% assign wait = time | minus: today_times.close | plus: 12 %}
+  Closed! Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+{% endif %}
+
+<table class="timetable">
+{% for time in site.times %}
+<tr>
+  {% assign day = forloop.index0 | plus: motw %}
+  {% assign day = unix | date: "%Y-%m-" | append: day %}
+  <td><b>{{ day | date: '%a' }}</b></td><td>{{ time.open }}-{{ time.close }}</td>
+  {% if day == date %}
+  <td><-</td>
+  {% endif %}
+</tr>
+{% endfor %}
+</table>

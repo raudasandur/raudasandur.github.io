@@ -5,6 +5,22 @@ contact:
   address: Lambavatnsvegur, Westfjords
   map: https://osm.org/go/efmp~0sMl-
 
+times:
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+  - open: "12:00"
+    close: "20:00"
+
 # Pastel
 # colors:
 #   background: "#FDF6EC"
