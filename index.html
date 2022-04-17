@@ -21,6 +21,7 @@ Hae!<br>
 <h3 style="margin-bottom: 0px;">Opening Hours</h3>
 
 {% assign today_times = site.times[dotw] %}
+{% assign tomorrow_times = site.times[dotw + 1] %}
 {% if time < today_times.open %}
   {% assign wait = today_times.open | minus: time %}
     Closed! Opening in {{ wait }} hour{% if wait > 1 %}s{% endif %}
@@ -28,7 +29,7 @@ Hae!<br>
   {% assign wait = today_times.close | minus: time %}
   Open! Closing in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% elsif time >= today_times.close %}
-  {% assign wait = 24 | minus: time | plus: 12 %}
+  {% assign wait = 24 | minus: time | plus: tomorrow_times.open %}
   Closed! Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% endif %}
 
