@@ -4,7 +4,7 @@ permalink: /
 layout: public
 ---
 
-Hae!<br>
+<img src="assets/images/banner.jpg" width="100%" height="100px" style="object-fit:cover;object-position: 0 30%;" />
 
 {% assign unix = site.time | date: '%s' %}
 {% assign time = unix | plus: 0 | date: '%H:%M' %}
@@ -39,10 +39,7 @@ Hae!<br>
 <tr>
   {% assign day = forloop.index0 | plus: motw %}
   {% assign day = unix | date: "%Y-%m-" | append: day %}
-  <td><b>{{ day | date: '%a' }}</b></td><td>{{ time.open }}-{{ time.close }}</td>
-  {% if day == date %}
-  <td><-</td>
-  {% endif %}
+  <td><b>{% if day == date %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</b></td><td>{{ time.open }}-{{ time.close }}</td>
 </tr>
 {% endfor %}
 </table>
