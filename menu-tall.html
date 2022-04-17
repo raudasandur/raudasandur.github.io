@@ -6,16 +6,14 @@ layout: public
 
 <h1 style="margin-top:0px">Menu</h1>
 
-<div class="category">
+<div class="menu">
 
 {% for category_hash in site.data.menu %}
 {% assign category = category_hash[1] %}
-<div class="item">
-
+<div class="menu-category">
 <h2>{{ category.name }}</h2>
-
 {% for item in category.items %}
-<h3 >
+<h3>
 {{ item.name }}
 <span style="font-weight:normal;display:inline;float:right;">{{ item.price }} ISK</span>
 </h3> 

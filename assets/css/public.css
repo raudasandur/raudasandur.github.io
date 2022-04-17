@@ -85,6 +85,23 @@ table.timetable {
 /* Menu */
 /* ---- */
 
+
+.menu {
+  column-width: 284px;
+  column-count: auto;
+  column-rule: 1px solid {{ site.colors.secondary }};
+  column-gap: 32px;
+  margin-bottom: 1rem;
+}
+
+.menu-category {
+  display: inline-block;
+  width:100%;
+}
+
+
+/* Menu-Wide */
+
 .category {
   display: grid;
   grid-gap: 1px;
@@ -94,7 +111,7 @@ table.timetable {
   padding: 1rem;
   padding-top: 0px;
   /* height: 6rem; */
-  border-bottom: 1px dashed {{ site.colors.secondary }};
+  border-bottom: 1px solid {{ site.colors.secondary }};
 }
 
 @media(min-width: 600px) {
@@ -103,7 +120,7 @@ table.timetable {
   }
 
   .item {
-    border-right: 1px dashed {{ site.colors.secondary }};
+    border-right: 1px solid {{ site.colors.secondary }};
   }
 
   .item:nth-child(2n) {
@@ -121,7 +138,7 @@ table.timetable {
   }
 
   .item:nth-child(2n) {
-    border-right: 1px dashed {{ site.colors.secondary }};
+    border-right: 1px solid {{ site.colors.secondary }};
   }
 
   .item:nth-child(3n) {
