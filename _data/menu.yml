@@ -15,53 +15,53 @@ drinks:
       price: 300
     - name: Tea
       price: 240
-# one:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# two:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# three:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# four:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# five:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
+one:
+  name: Lunch
+  items:
+    - name: Waffles
+      description: Homemade waffles with soy cream and blueberries
+      price: 560
+    - name: Soup
+      price: 1200
+    - name: Sandwich
+      price: 640
+two:
+  name: Lunch
+  items:
+    - name: Waffles
+      description: Homemade waffles with soy cream and blueberries
+      price: 560
+    - name: Soup
+      price: 1200
+    - name: Sandwich
+      price: 640
+three:
+  name: Lunch
+  items:
+    - name: Waffles
+      description: Homemade waffles with soy cream and blueberries
+      price: 560
+    - name: Soup
+      price: 1200
+    - name: Sandwich
+      price: 640
+four:
+  name: Lunch
+  items:
+    - name: Waffles
+      description: Homemade waffles with soy cream and blueberries
+      price: 560
+    - name: Soup
+      price: 1200
+    - name: Sandwich
+      price: 640
+five:
+  name: Lunch
+  items:
+    - name: Waffles
+      description: Homemade waffles with soy cream and blueberries
+      price: 560
+    - name: Soup
+      price: 1200
+    - name: Sandwich
+      price: 640

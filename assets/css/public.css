@@ -87,7 +87,7 @@ table.timetable {
 
 
 .menu {
-  column-width: 284px;
+  column-width: 268px;
   column-count: auto;
   column-rule: 1px solid {{ site.colors.secondary }};
   column-gap: 32px;
