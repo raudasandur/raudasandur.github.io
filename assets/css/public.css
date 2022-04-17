@@ -64,6 +64,21 @@ table.timetable {
 
   margin-top: 32px !important;
   margin-bottom: 32px !important;
+
+  position: relative;
+  min-height: 100vh;
+  /* Firefox */
+  min-height: -moz-calc(100vh - 64px);
+  /* WebKit */
+  min-height: -webkit-calc(100vh - 64px);
+  /* Opera */
+  min-height: -o-calc(100vh - 64px);
+  /* Standard */
+  min-height: calc(100vh - 64px);
+}
+
+.content {
+  padding-bottom: 2.5rem;
 }
 
 /* ---- */
@@ -121,4 +136,23 @@ table.timetable {
 .item:nth-last-child(1) {
   border-bottom: none;
   border-right: none;
+}
+
+/* ------ */
+/* Footer */
+/* ------ */
+
+.footer {
+  position: absolute;
+  /* Firefox */
+  width: -moz-calc(100% - 32px);
+  /* WebKit */
+  width: -webkit-calc(100% - 32px);
+  /* Opera */
+  width: -o-calc(100% - 32px);
+  /* Standard */
+  width: calc(100% - 32px);
+  max-width: 1012px;
+  bottom: 0;
+  height: 2.5rem;
 }

@@ -1,0 +1,28 @@
+---
+title: Menu
+permalink: /menu/
+layout: public
+---
+
+<h1 style="margin-top:0px">Menu</h1>
+
+<div class="category">
+
+{% for category_hash in site.data.menu %}
+{% assign category = category_hash[1] %}
+<div class="item">
+
+<h2>{{ category.name }}</h2>
+
+{% for item in category.items %}
+<h3 >
+{{ item.name }}
+<span style="font-weight:normal;display:inline;float:right;">{{ item.price }} ISK</span>
+</h3> 
+{{ item.description }}
+<div width="100%" style="border-bottom: 1px dashed {{ site.colors.secondary }}"></div>
+{% endfor %}
+</div>
+{% endfor %}
+
+</div>
