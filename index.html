@@ -11,6 +11,7 @@ Hae!<br>
 {% assign date = unix | date: "%Y-%m-%d" %} 
 
 {% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
+{% assign ndotw = unix | date: '%w' | modulo: 7 %}
 {% assign dotm = unix | date: '%d' %}
 {% assign motw = dotm | minus: dotw %}
 
@@ -21,7 +22,7 @@ Hae!<br>
 <h3 style="margin-bottom: 0px;">Opening Hours</h3>
 
 {% assign today_times = site.times[dotw] %}
-{% assign tomorrow_times = site.times[dotw + 1] %}
+{% assign tomorrow_times = site.times[ndotw] %}
 {% if time < today_times.open %}
   {% assign wait = today_times.open | minus: time %}
     Closed! Opening in {{ wait }} hour{% if wait > 1 %}s{% endif %}
