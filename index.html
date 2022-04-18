@@ -23,25 +23,24 @@ banner-offset: 30
 
 <div class="menu-category"><div class="menu-item">
 <h2>☕ Cafe</h2>
-<p style="text-align: justify">
+<p style="text-align: left">
 A perfect place to warm up with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 40 minute drive away from Patreksfjörður and in walking distance from the Melanes campsite.
 </p>
 </div></div>
 
 <div class="menu-category"><div class="menu-item">
 <h2>🕰️ Opening Hours</h2>
-<center>
 {% assign today_times = site.times[dotw] %}
 {% assign tomorrow_times = site.times[ndotw] %}
 {% if time < today_times.open %}
   {% assign wait = today_times.open | minus: time %}
-    Closed! Opening in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+  <b>Closed!</b> Opening in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% elsif time >= today_times.open and time < today_times.close %}
   {% assign wait = today_times.close | minus: time %}
-  Open! Closing in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+  <b>Open!</b> Closing in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% elsif time >= today_times.close %}
   {% assign wait = 24 | minus: time | plus: tomorrow_times.open %}
-  Closed! Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
+  <b>Closed!</b> Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% endif %}
 <br/>
 From 20 May to 30 Aug
@@ -54,7 +53,6 @@ From 20 May to 30 Aug
 </tr>
 {% endfor %}
 </table>
-</center>
 </div></div>
 
 <div class="menu-category"><div class="menu-item">
