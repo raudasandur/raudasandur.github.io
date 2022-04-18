@@ -21,14 +21,14 @@ banner-offset: 30
 
 <div class="menu">
 
-<div class="menu-category">
+<div class="menu-category"><div class="menu-item">
 <h2>☕ Cafe</h2>
 <p style="text-align: justify">
 A perfect place to warm up with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 40 minute drive away from Patreksfjörður and in walking distance from the Melanes campsite.
 </p>
-</div>
+</div></div>
 
-<div class="menu-category">
+<div class="menu-category"><div class="menu-item">
 <h2>🕰️ Opening Hours</h2>
 <center>
 {% assign today_times = site.times[dotw] %}
@@ -43,7 +43,8 @@ A perfect place to warm up with a cup of coffee and a waffle after a long walk o
   {% assign wait = 24 | minus: time | plus: tomorrow_times.open %}
   Closed! Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% endif %}
-
+<br/>
+From 20 May to 30 Aug
 <table class="timetable">
 {% for time in site.times %}
 <tr>
@@ -53,18 +54,17 @@ A perfect place to warm up with a cup of coffee and a waffle after a long walk o
 </tr>
 {% endfor %}
 </table>
-From 20 May to 30 Aug
 </center>
-</div>
+</div></div>
 
-<div class="menu-category">
+<div class="menu-category"><div class="menu-item">
 <h2>🙋 Contact</h2>
 <table class="contact">
-<tr><th>Address</th><td style="padding-top:0"><a href="{{ site.contact.map }}">{{ site.contact.address }}</a></td></tr>
+<tr><th style="padding-top:0">Address</th><td style="padding-top:0"><a href="{{ site.contact.map }}">{{ site.contact.address }}</a></td></tr>
 <tr><th>Email</th><td><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></td></tr>
 <tr style="border-bottom: none;"><th>Phone</th><td><a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a></td></tr>
 </table>
-</div>
+</div></div>
 
 </div>
 

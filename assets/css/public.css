@@ -9,7 +9,7 @@ body {
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Palatino", "Times", "Georgia", serif;
+  font-family: "Palatino", "Georgia", serif;
 }
 
 a {
@@ -122,11 +122,13 @@ table.contact {
 
 .contact > tbody > tr {
   border-bottom: 1px dashed {{ site.colors.secondary }};
+  vertical-align: top;
 }
 
 .contact > tbody > tr > th {
   text-align: right;
   padding-right: .5em;
+  padding-top: .5em;
 }
 
 .contact > tbody > tr > td {
@@ -150,10 +152,13 @@ table.contact {
 }
 
 .menu-category {
-  display: inline-block;
   width:100%;
 }
 
+.menu-item {
+  display: inline-block;
+  width:100%;
+}
 
 /* Menu-Wide */
 

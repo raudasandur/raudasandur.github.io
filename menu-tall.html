@@ -11,7 +11,7 @@ banner-text: Menu
 
 {% for category_hash in site.data.menu %}
 {% assign category = category_hash[1] %}
-<div class="menu-category">
+<div class="menu-category"><div class="menu-item">
 <h2>{{ category.name }}</h2>
 {% for item in category.items %}
 <h3>
@@ -21,7 +21,7 @@ banner-text: Menu
 {{ item.description }}
 <div width="100%" style="border-bottom: 1px dashed {{ site.colors.secondary }}"></div>
 {% endfor %}
-</div>
+</div></div>
 {% endfor %}
 
 </div>
