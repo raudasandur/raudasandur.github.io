@@ -77,8 +77,38 @@ table.timetable {
   min-height: calc(100vh - 64px);
 }
 
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner > h1 {
+  border: none;
+  color: {{ site.colors.background }};
+  text-stroke: 2px {{ site.colors.primary }};
+  -webkit-text-stroke: 2px {{ site.colors.primary }};
+   paint-order: stroke fill;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
 .content {
   padding-bottom: 2.5rem;
+}
+
+/* Map */
+
+.map {
+  /* columns: auto; */
+  /* column-width: auto; */
+}
+
+.map > img {
+  width: 100%;
+  border: 2px solid {{ site.colors.primary }};
 }
 
 /* ---- */

@@ -2,9 +2,9 @@
 title: Home
 permalink: /
 layout: public
+banner: banner
+banner-offset: 30
 ---
-
-<img src="assets/images/banner.jpg" width="100%" height="100px" style="object-fit:cover;object-position: 0 30%;margin-top:0.6em;" />
 
 {% assign unix = site.time | date: '%s' %}
 {% assign time = unix | plus: 0 | date: '%H:%M' %}
@@ -19,7 +19,7 @@ layout: public
 {% if minutes > "45" %}
   {% assign time = unix | plus: 3600 | date: '%H:%M' %}
 {% endif %}
-<h3 style="margin-bottom: 0px;">Opening Hours</h3>
+<h2 style="margin-bottom: 1rem;">Opening Hours</h2>
 
 {% assign today_times = site.times[dotw] %}
 {% assign tomorrow_times = site.times[ndotw] %}
@@ -43,3 +43,10 @@ layout: public
 </tr>
 {% endfor %}
 </table>
+
+<h2>Location</h2>
+<div class="map">
+<img src="assets/images/map-iceland.jpg" />
+<img src="assets/images/map-westfjords.jpg" />
+<img src="assets/images/map-cafe.jpg" />
+</div>
