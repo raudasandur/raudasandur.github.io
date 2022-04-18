@@ -12,15 +12,24 @@ banner-offset: 30
 
 {% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
 {% assign ndotw = unix | date: '%w' | modulo: 7 %}
-{% assign dotm = unix | date: '%d' %}
-{% assign motw = dotm | minus: dotw %}
+{% assign dotm = unix | date: '%d' %} {% assign motw = dotm | minus: dotw %}
 
 {% assign minutes = time | date: '%M' %}
 {% if minutes > "45" %}
   {% assign time = unix | plus: 3600 | date: '%H:%M' %}
 {% endif %}
-<h2 style="margin-bottom: 1rem;">Opening Hours</h2>
 
+<div class="menu">
+
+<div class="menu-category">
+<h2>☕ Cafe</h2>
+<p>
+A perfect place to warm up with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 40 minute drive away from Patreksfjörður and close to the Melanes campsite.
+</p>
+</div>
+
+<div class="menu-category">
+<h2>🕰️ Opening Hours</h2>
 {% assign today_times = site.times[dotw] %}
 {% assign tomorrow_times = site.times[ndotw] %}
 {% if time < today_times.open %}
@@ -39,12 +48,24 @@ banner-offset: 30
 <tr>
   {% assign day = forloop.index0 | plus: motw %}
   {% assign day = unix | date: "%Y-%m-" | append: day %}
-  <td><b>{% if day == date %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</b></td><td>{{ time.open }}-{{ time.close }}</td>
+  <th>{% if day == date %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>{{ time.open }}-{{ time.close }}</td>
 </tr>
 {% endfor %}
 </table>
+</div>
 
-<h2>Location</h2>
+<div class="menu-category">
+<h2>🙋 Contact</h2>
+<table>
+<tr><th>Address</th><td>Kirkjuvammur,<br/>451 Patreksfjörður,<br/>Westfjords</td></tr>
+<tr><th>Email</th><td>contact@raudasandur.is</td></tr>
+<tr><th>Phone</th><td>+354 123 4567</td></tr>
+</table>
+</div>
+
+</div>
+
+<h2>🗺️ Location</h2>
 <div class="map">
 <img src="assets/images/map-iceland.jpg" />
 <img src="assets/images/map-westfjords.jpg" />

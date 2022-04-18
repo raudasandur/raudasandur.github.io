@@ -1,5 +1,5 @@
 lunch:
-  name: Lunch
+  name: 🍽️ Lunch
   items:
     - name: Waffles
       description: Homemade waffles with soy cream and blueberries
@@ -9,7 +9,7 @@ lunch:
     - name: Sandwich
       price: 640
 drinks:
-  name: Drinks
+  name: ☕ Drinks
   items:
     - name: Coffee
       price: 300
