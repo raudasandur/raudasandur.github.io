@@ -15,8 +15,12 @@ lunch:
   items:
     - name: Waffles
       description: Homemade waffles with soy cream and hand-picked blueberries
+      price: 520
+      allergens: vegan gluten soy
+    - name: Non-plant based waffles
+      description: Egg waffles with whip cream and hand-picked blueberries
       price: 560
-      allergens: 🌱 🌾 🫘 
+      allergens: gluten lactose eggs
     - name: Soup
       price: 1200
     - name: Sandwich
@@ -25,17 +29,23 @@ allergens:
   name: Diets and allergens
   symbol: 📋
   legend:
-    - name: Vegan
+    vegan:
+      name: Vegan
       symbol: 🌱
-    - name: Gluten
+    gluten:
+      name: Gluten
       symbol: 🌾
-    - name: Soy
+    soy:
+      name: Soy
       symbol: 🫘
-    - name: Nuts
+    nuts:
+      name: Nuts
       symbol: 🥜
-    - name: Lactose
+    lactose:
+      name: Lactose
       symbol: 🥛
-    - name: Eggs
+    eggs:
+      name: Eggs
       symbol: 🥚
 # one:
 #   name: Lunch

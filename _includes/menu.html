@@ -6,7 +6,8 @@
     <h2><span>{{ category.symbol }}</span> {{ category.name }}</h2>
 {% if category.legend %}
 <h3>
-{% for item in category.legend %}
+{% for item_hash in category.legend %}
+  {% assign item = item_hash[1] %}
   <code class="symbols">{{ item.symbol}} </code>{{ item.name }}</br>
 {% endfor %}
 </h3>
@@ -21,7 +22,14 @@
 {% if item.description or item.allergens %}
 <tr>
   <td>{{ item.description }}</td>
-  <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;"><h3>{{ item.allergens }}<h3></td>
+{% if item.allergens %}
+  <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;"><h3>
+    {% assign allergens = item.allergens | split: " " %}
+    {% for allergen in allergens %}
+      {{ site.data.menu.allergens.legend[allergen].symbol }}
+    {% endfor %}
+  <h3></td>
+{% endif %}
 </tr>
 {% endif %}
 </table>
