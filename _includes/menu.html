@@ -1,9 +1,15 @@
+{% assign unix = site.time | date: '%s' %}
+{% assign time = unix | plus: 0 | date: '%H:%M' %}
+{% assign date = unix | date: "%Y-%m-%d" %} 
+{% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
+
 <div class="menu">
 
 {% for category_hash in site.data.menu %}
 {% assign category = category_hash[1] %}
 <div class="menu-category"><div class="menu-item">
     <h2><span>{{ category.symbol }}</span> {{ category.name }}</h2>
+{{ category.description }}
 {% if category.legend %}
 <h3>
 {% for item_hash in category.legend %}
@@ -14,26 +20,40 @@
 {% endif %}
 {% if category.items %}
 {% for item in category.items %}
+{% unless item.day and item.day != dotw %}
 <table style="width:100%">
 <tr>
   <td><h3 style="margin-top:0;margin-bottom:0">{{ item.name }}</h3></td>
-  <td style="text-align:right;width:fit-content;">{{ item.price }}&nbsp;ISK</td>
-</tr>
-{% if item.description or item.allergens %}
-<tr>
-  <td>{{ item.description }}</td>
-{% if item.allergens %}
-  <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;"><h3>
+  {% unless item.description %}{% if item.allergens %}
+  <td class="symbols" style="vertical-align:middle;text-align:right;width:min-content;">
+    <h3 style="margin-top:auto;margin-bottom:auto">
     {% assign allergens = item.allergens | split: " " %}
     {% for allergen in allergens %}
       {{ site.data.menu.allergens.legend[allergen].symbol }}
     {% endfor %}
-  <h3></td>
+    </h3>
+  </td>
+  {% endif %}{% endunless %}
+  <td style="text-align:right;width:4em;">{{ item.price }}&nbsp;ISK</td>
+</tr>
+{% if item.description %}
+<tr>
+  <td>{{ item.description }}</td>
+{% if item.allergens %}
+  <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;">
+    <h3>
+    {% assign allergens = item.allergens | split: " " %}
+    {% for allergen in allergens %}
+      {{ site.data.menu.allergens.legend[allergen].symbol }}
+    {% endfor %}
+    <h3>
+  </td>
 {% endif %}
 </tr>
 {% endif %}
 </table>
 <div width="100%" class="item-sep"></div>
+{% endunless %}
 {% endfor %}
 {% endif %}
 </div></div>

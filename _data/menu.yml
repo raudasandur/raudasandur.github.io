@@ -1,17 +1,35 @@
 drinks:
-  name: Drinks
+  name: Hot drinks
   symbol: ☕
   items:
     - name: Coffee
       price: 300
     - name: Tea
       price: 240
+    - name: Soy milk
+      price: "-"
+      allergens: soy
+    - name: Oat milk
+      price: "-"
+      allergens: gluten
+    - name: Almond milk
+      price: "-"
+      allergens: nuts
+    - name: Cow milk
+      price: 40
+      allergens: lactose
+cold_drinks:
+  name: Cold drinks
+  symbol: 🥤
+  items:
     - name: Iced tea
       price: 400
       description: Homemade iced tea from local herbs
-lunch:
-  name: Lunch
-  symbol: 🍽️
+    - name: Lemonade
+      price: 300
+pastry:
+  name: Pastry
+  symbol: 🍰
   items:
     - name: Waffles
       description: Homemade waffles with soy cream and hand-picked blueberries
@@ -21,17 +39,49 @@ lunch:
       description: Egg waffles with whip cream and hand-picked blueberries
       price: 560
       allergens: gluten lactose eggs
-    - name: Soup
+lunch:
+  name: Lunch
+  symbol: 🍽️
+  items:
+    - name: Soup of the day
+      description: "Monday: Carrot soup"
       price: 1200
+      day: 0
+    - name: Soup of the day
+      description: "Tuesday: Pumpkin soup"
+      price: 1200
+      day: 1
+    - name: Soup of the day
+      description: "Wednessday: Icelandic lamb-like soup"
+      price: 1200
+      allergens: gluten
+      day: 2
+    - name: Soup of the day
+      description: "Thursday: Icelandic vegetable soup"
+      price: 1200
+      day: 3
+    - name: Soup of the day
+      description: "Friday: Rhubarb soup"
+      price: 1200
+      day: 4
+    - name: Soup of the day
+      description: "Saturday: Tomato soup with soy cream and basil"
+      price: 1200
+      allergens: soy
+      day: 5
+    - name: Soup of the day
+      description: "Sunday: Mushroom soup"
+      price: 1200
+      day: 6
     - name: Sandwich
+      description: "Whole grain bread with hummus, spinach, avocado and bell-peppers"
       price: 640
+      allergens: gluten
 allergens:
-  name: Diets and allergens
+  name: Allergens
   symbol: 📋
+  description: "Items without lactose, eggs or animals are vegan-friendly!"
   legend:
-    vegan:
-      name: Vegan
-      symbol: 🌱
     gluten:
       name: Gluten
       symbol: 🌾
@@ -47,53 +97,24 @@ allergens:
     eggs:
       name: Eggs
       symbol: 🥚
-# one:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# two:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# three:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# four:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
-# five:
-#   name: Lunch
-#   items:
-#     - name: Waffles
-#       description: Homemade waffles with soy cream and blueberries
-#       price: 560
-#     - name: Soup
-#       price: 1200
-#     - name: Sandwich
-#       price: 640
+    cow:
+      name: Cow
+      symbol: 🐮
+    pig:
+      name: Pig
+      symbol: 🐷
+    chicken:
+      name: Chicken
+      symbol: 🐔
+    lamb:
+      name: Lamb
+      symbol: 🐑
+    fish:
+      name: Fish
+      symbol: 🐟
+    crab:
+      name: Crab
+      symbol: 🦀
+    shrimp:
+      name: Shrimp
+      symbol: 🦐

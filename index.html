@@ -12,7 +12,8 @@ banner-offset: 30
 
 {% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
 {% assign ndotw = unix | date: '%w' | modulo: 7 %}
-{% assign dotm = unix | date: '%d' %} {% assign motw = dotm | minus: dotw %}
+{% assign dotm = unix | date: '%d' %}
+{% assign motw = dotm | minus: dotw %}
 
 {% assign minutes = time | date: '%M' %}
 {% if minutes > "45" %}
