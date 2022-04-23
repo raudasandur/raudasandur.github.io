@@ -6,6 +6,12 @@ contact:
   address: Kirkjuvammur,<br/>451 Patreksfjörður,<br/>Westfjords
   map: https://osm.org/go/efmp~2u?m=
 
+defaults:
+  - scope:
+      path: "assets/photos"
+    values:
+      image: true
+
 season:
   start:
     month: "06"

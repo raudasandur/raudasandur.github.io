@@ -1,0 +1,15 @@
+---
+title: Photos
+permalink: /photos/
+layout: public
+banner: "banner-about"
+banner-offset: 35
+banner-text: Photos
+---
+
+{% assign photos = site.static_files | where: "image", true %}
+{% for photo in photos %}
+<center>
+  <img src="{{ photo.path }}" width="96%" />
+</center>
+{% endfor %}
