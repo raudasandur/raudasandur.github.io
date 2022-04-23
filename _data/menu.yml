@@ -1,67 +1,89 @@
-lunch:
-  name: 🍽️ Lunch
-  items:
-    - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
-      price: 560
-    - name: Soup
-      price: 1200
-    - name: Sandwich
-      price: 640
 drinks:
-  name: ☕ Drinks
+  name: Drinks
+  symbol: ☕
   items:
     - name: Coffee
       price: 300
     - name: Tea
       price: 240
-one:
+    - name: Iced tea
+      price: 400
+      description: Homemade iced tea from local herbs
+lunch:
   name: Lunch
+  symbol: 🍽️
   items:
     - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
+      description: Homemade waffles with soy cream and hand-picked blueberries
       price: 560
+      allergens: 🌱 🌾 🫘 
     - name: Soup
       price: 1200
     - name: Sandwich
       price: 640
-two:
-  name: Lunch
-  items:
-    - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
-      price: 560
-    - name: Soup
-      price: 1200
-    - name: Sandwich
-      price: 640
-three:
-  name: Lunch
-  items:
-    - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
-      price: 560
-    - name: Soup
-      price: 1200
-    - name: Sandwich
-      price: 640
-four:
-  name: Lunch
-  items:
-    - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
-      price: 560
-    - name: Soup
-      price: 1200
-    - name: Sandwich
-      price: 640
-five:
-  name: Lunch
-  items:
-    - name: Waffles
-      description: Homemade waffles with soy cream and blueberries
-      price: 560
-    - name: Soup
-      price: 1200
-    - name: Sandwich
-      price: 640
+allergens:
+  name: Diets and allergens
+  symbol: 📋
+  legend:
+    - name: Vegan
+      symbol: 🌱
+    - name: Gluten
+      symbol: 🌾
+    - name: Soy
+      symbol: 🫘
+    - name: Nuts
+      symbol: 🥜
+    - name: Lactose
+      symbol: 🥛
+    - name: Eggs
+      symbol: 🥚
+# one:
+#   name: Lunch
+#   items:
+#     - name: Waffles
+#       description: Homemade waffles with soy cream and blueberries
+#       price: 560
+#     - name: Soup
+#       price: 1200
+#     - name: Sandwich
+#       price: 640
+# two:
+#   name: Lunch
+#   items:
+#     - name: Waffles
+#       description: Homemade waffles with soy cream and blueberries
+#       price: 560
+#     - name: Soup
+#       price: 1200
+#     - name: Sandwich
+#       price: 640
+# three:
+#   name: Lunch
+#   items:
+#     - name: Waffles
+#       description: Homemade waffles with soy cream and blueberries
+#       price: 560
+#     - name: Soup
+#       price: 1200
+#     - name: Sandwich
+#       price: 640
+# four:
+#   name: Lunch
+#   items:
+#     - name: Waffles
+#       description: Homemade waffles with soy cream and blueberries
+#       price: 560
+#     - name: Soup
+#       price: 1200
+#     - name: Sandwich
+#       price: 640
+# five:
+#   name: Lunch
+#   items:
+#     - name: Waffles
+#       description: Homemade waffles with soy cream and blueberries
+#       price: 560
+#     - name: Soup
+#       price: 1200
+#     - name: Sandwich
+#       price: 640

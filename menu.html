@@ -1,31 +1,10 @@
 ---
 title: Menu
-permalink: /menu-wide/
+permalink: /menu/
 layout: public
 banner: "banner-menu"
-banner-offset: 30
+banner-offset: 35
+banner-text: Menu
 ---
 
-<h1 style="margin-top:0px">Menu</h1>
-
-{% for category_hash in site.data.menu %}
-{% assign category = category_hash[1] %}
-
-<h2>{{ category.name }}</h2>
-
-<div class="category">
-{% for item in category.items %}
-
-<div class="item">
-<h3>
-{{ item.name }}
-<span style="font-weight:normal;display:inline;float:right;">{{ item.price }} ISK</span>
-</h3> 
-
-{{ item.description }}
-
-</div>
-
-{% endfor %}
-</div>
-{% endfor %}
+{% include menu.html %}

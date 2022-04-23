@@ -162,6 +162,12 @@ table.contact {
   width:100%;
 }
 
+.item-sep {
+  margin-top:0.2em;
+  margin-bottom:0.4em;
+  border-bottom: 1px dashed {{ site.colors.secondary }};
+}
+
 /* Menu-Wide */
 
 .category {
@@ -215,6 +221,10 @@ table.contact {
 .item:nth-last-child(1) {
   border-bottom: none;
   border-right: none;
+}
+
+.symbols {
+  text-shadow: 0 0 2px {{ site.colors.primary }},0 0 2px {{ site.colors.primary }};
 }
 
 /* ------ */
