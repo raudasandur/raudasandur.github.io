@@ -1,0 +1,34 @@
+---
+---
+
+{% assign primary = "black" %}
+{% assign secondary = "lightgrey" %}
+
+body {
+  color: {{ primary }};
+  background-color: white;
+}
+
+h1 {
+  border-bottom: 2px solid {{ secondary }};
+}
+
+h2 {
+  border-bottom: 2px solid {{ secondary }};
+}
+
+.menu {
+  column-rule: 2px solid {{ secondary }};
+}
+
+.item-sep {
+  border-bottom: 2px dashed {{ secondary }};
+}
+
+.banner > h1 {
+  color: white;
+}
+
+.symbols {
+  text-shadow: 0 0 2px {{ primary }},0 0 2px {{ primary }};
+}
