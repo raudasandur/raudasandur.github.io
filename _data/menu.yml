@@ -4,41 +4,46 @@ drinks:
   items:
     - name: Coffee
       price: 300
+    - name: Latte
+      price: 300
+      allergens: soy
+    - name: Espresso
+      price: 300
+    - name: Cappuccino
+      price: 300
+      allergens: soy
+    - name: Hot chocolate
+      price: 300
+      allergens: soy
     - name: Tea
       price: 240
-    - name: Soy milk
-      price: "-"
-      allergens: soy
-    - name: Oat milk
-      price: "-"
-      allergens: gluten
-    - name: Almond milk
-      price: "-"
-      allergens: nuts
-    - name: Cow milk
-      price: 40
-      allergens: lactose
+      description: "Local herbs, mint or ginger"
 cold_drinks:
   name: Cold drinks
-  symbol: 🥤
+  symbol: 🍹
   items:
     - name: Iced tea
       price: 400
       description: Homemade iced tea from local herbs
     - name: Lemonade
       price: 300
+      description: With sparkling or flat water
 pastry:
-  name: Pastry
+  name: Pastries
   symbol: 🍰
   items:
     - name: Waffles
-      description: Homemade waffles with soy cream and hand-picked blueberries
+      description: Homemade waffles with cream and hand-picked blueberries
       price: 520
-      allergens: vegan gluten soy
-    - name: Non-plant based waffles
-      description: Egg waffles with whip cream and hand-picked blueberries
-      price: 560
-      allergens: gluten lactose eggs
+      allergens: gluten soy
+    # - name: Non-plant based waffles
+    #   description: Egg waffles with whip cream and hand-picked blueberries
+    #   price: 560
+    #   allergens: gluten lactose eggs
+    - name: Cake
+      description: Homemade chocolate cake
+      price: 450
+      allergens: eggs lactose nuts
 lunch:
   name: Lunch
   symbol: 🍽️
@@ -65,7 +70,7 @@ lunch:
       price: 1200
       day: 4
     - name: Soup of the day
-      description: "Saturday: Tomato soup with soy cream and basil"
+      description: "Saturday: Tomato soup with cream and basil"
       price: 1200
       allergens: soy
       day: 5
@@ -84,10 +89,10 @@ allergens:
   legend:
     gluten:
       name: Gluten
-      symbol: 🌾
+      symbol: 🍞
     soy:
       name: Soy
-      symbol: 🫘
+      symbol: 🌱
     nuts:
       name: Nuts
       symbol: 🥜
@@ -95,26 +100,26 @@ allergens:
       name: Lactose
       symbol: 🥛
     eggs:
-      name: Eggs
+      name: "Eggs<br><br><br><br><br><br><br><br><br><br><br>"
       symbol: 🥚
-    cow:
-      name: Cow
-      symbol: 🐮
-    pig:
-      name: Pig
-      symbol: 🐷
-    chicken:
-      name: Chicken
-      symbol: 🐔
-    lamb:
-      name: Lamb
-      symbol: 🐑
-    fish:
-      name: Fish
-      symbol: 🐟
-    crab:
-      name: Crab
-      symbol: 🦀
-    shrimp:
-      name: Shrimp
-      symbol: 🦐
+    # cow:
+    #   name: Cow
+    #   symbol: 🐮
+    # pig:
+    #   name: Pig
+    #   symbol: 🐷
+    # chicken:
+    #   name: Chicken
+    #   symbol: 🐔
+    # lamb:
+    #   name: Lamb
+    #   symbol: 🐑
+    # fish:
+    #   name: Fish
+    #   symbol: 🐟
+    # crab:
+    #   name: Crab
+    #   symbol: 🦀
+    # shrimp:
+    #   name: Shrimp
+    #   symbol: 🦐

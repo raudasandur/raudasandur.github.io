@@ -26,7 +26,7 @@
   <td><h3 style="margin-top:0;margin-bottom:0">{{ item.name }}</h3></td>
   {% unless item.description %}{% if item.allergens %}
   <td class="symbols" style="vertical-align:middle;text-align:right;width:min-content;">
-    <h3 style="margin-top:auto;margin-bottom:auto">
+    <h3 style="margin-top:0;margin-bottom:0">
     {% assign allergens = item.allergens | split: " " %}
     {% for allergen in allergens %}
       {{ site.data.menu.allergens.legend[allergen].symbol }}
@@ -41,7 +41,7 @@
   <td>{{ item.description }}</td>
 {% if item.allergens %}
   <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;">
-    <h3>
+    <h3 style="margin-top:0;margin-bottom:0">
     {% assign allergens = item.allergens | split: " " %}
     {% for allergen in allergens %}
       {{ site.data.menu.allergens.legend[allergen].symbol }}
