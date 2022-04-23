@@ -6,8 +6,10 @@ banner: banner
 banner-offset: 30
 ---
 
-{% assign unix = site.time | date: '%s' %}
-{% assign time = unix | plus: 0 | date: '%H:%M' %}
+{% comment %} {% assign unix = site.time | date: '%s' | plus: 11256000 %} {% endcomment %}
+{% comment %} {% assign unix = site.time | date: '%s' | plus: 3456000 %} {% endcomment %}
+{% assign unix = site.time | date: '%s' | plus: 0 %}
+{% assign time = unix | date: '%H:%M' %}
 {% assign date = unix | date: "%Y-%m-%d" %} 
 
 {% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
@@ -22,8 +24,8 @@ banner-offset: 30
 
 {% capture day_start %}{{ unix | date: "%Y" }}-{{ site.season.start.month }}-{{ site.season.start.day }}{% endcapture %}
 {% capture day_end %}{{ unix | date: "%Y" }}-{{ site.season.end.month }}-{{ site.season.end.day }}{% endcapture %}
-{% assign day_start = day_start | date: "%s" %}
-{% assign day_end = day_end | date: "%s" %}
+{% assign day_start = day_start | date: "%s" | plus: 0%}
+{% assign day_end = day_end | date: "%s" | plus: 0 %}
 
 <div class="menu">
 
@@ -43,7 +45,7 @@ A perfect place to relax with a cup of coffee and a waffle after a long walk on 
   {% assign wait = wait | divided_by: 86400 %}
   <b>Closed!</b> Opening in {{ wait }} day{% if wait > 1 %}s{% endif %}
 {% elsif unix > day_end %}
-  {% assign wait = day_end | minus: unix %}
+  {% assign wait = day_start | plus: 31536000 | minus: unix %}
   {% assign wait = wait | divided_by: 86400 %}
   <b>Closed!</b> Opening next year in {{ wait }} day{% if wait > 1 %}s{% endif %}
 {% elsif time < today_times.open %}
@@ -61,9 +63,10 @@ From {{ day_start | date: "%-d %b" }} to {{ day_end | date: "%-d %b" }}
 <table class="timetable">
 {% for time in site.times %}
 <tr>
-  {% assign day = forloop.index0 | plus: motw %}
-  {% assign day = unix | date: "%Y-%m-" | append: day %}
-  <th>{% if day == date %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>{{ time.open }}-{{ time.close }}</td>
+  {% assign monday_offset = dotw | times: 86400 %} 
+  {% assign day = forloop.index0 | times: 86400 %}
+  {% assign day = unix | minus: monday_offset | plus: day | date: "%Y-%m-%d" %}
+  <th>{% if dotw == forloop.index0 %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>{{ time.open }}-{{ time.close }}</td>
 </tr>
 {% endfor %}
 </table>
