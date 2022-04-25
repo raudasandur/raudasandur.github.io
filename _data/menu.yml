@@ -1,87 +1,95 @@
 drinks:
-  name: Hot drinks
+  name: Drinks
   symbol: ☕
   items:
     - name: Coffee
-      price: 300
+      price: 350
     - name: Latte
-      price: 300
+      price: 350
       allergens: soy
     - name: Espresso
-      price: 300
+      price: 350
     - name: Cappuccino
-      price: 300
-      allergens: soy
-    - name: Hot chocolate
-      price: 300
+      price: 350
       allergens: soy
     - name: Tea
-      price: 240
-      description: "Local herbs, mint or ginger"
-cold_drinks:
-  name: Cold drinks
-  symbol: 🍹
+      price: 350
+    - name: Soda
+      price: 350
+# cold_drinks:
+#   name: Cold drinks
+#   symbol: 🍹
+#   items:
+#     - name: Iced tea
+#       price: 400
+#       description: Homemade iced tea from local herbs
+#     - name: Lemonade
+#       price: 300
+#       description: With sparkling or flat water
+alcohol:
+  name: Alcohol (20+)
+  symbol: 🍷
   items:
-    - name: Iced tea
-      price: 400
-      description: Homemade iced tea from local herbs
-    - name: Lemonade
-      price: 300
-      description: With sparkling or flat water
+    - name: Beer
+      price: 850
+    - name: Wine
+      price: 850
 pastry:
   name: Pastries
   symbol: 🍰
   items:
     - name: Waffles
-      description: Homemade waffles with cream and hand-picked blueberries
-      price: 520
+      description: Homemade waffles with cream and blueberries
+      price: 550
       allergens: gluten soy
     # - name: Non-plant based waffles
     #   description: Egg waffles with whip cream and hand-picked blueberries
     #   price: 560
     #   allergens: gluten lactose eggs
-    - name: Cake
+    - name: Cake of the day
       description: Homemade chocolate cake
-      price: 450
+      price: 550
       allergens: eggs lactose nuts
+      day: 0 1 2 3 4 5 6
 lunch:
   name: Lunch
   symbol: 🍽️
   items:
     - name: Soup of the day
-      description: "Monday: Carrot soup"
+      description: "Carrot soup"
       price: 1200
       day: 0
     - name: Soup of the day
-      description: "Tuesday: Pumpkin soup"
+      description: "Pumpkin soup"
       price: 1200
       day: 1
     - name: Soup of the day
-      description: "Wednessday: Icelandic lamb-like soup"
+      description: "Icelandic lamb-like soup"
       price: 1200
       allergens: gluten
       day: 2
     - name: Soup of the day
-      description: "Thursday: Icelandic vegetable soup"
+      description: "Icelandic vegetable soup"
       price: 1200
       day: 3
     - name: Soup of the day
-      description: "Friday: Rhubarb soup"
+      description: "Rhubarb soup"
       price: 1200
       day: 4
     - name: Soup of the day
-      description: "Saturday: Tomato soup with cream and basil"
+      description: "Tomato soup with cream and basil"
       price: 1200
       allergens: soy
       day: 5
     - name: Soup of the day
-      description: "Sunday: Mushroom soup"
+      description: "Mushroom soup"
       price: 1200
       day: 6
-    - name: Sandwich
-      description: "Whole grain bread with hummus, spinach, avocado and bell-peppers"
-      price: 640
-      allergens: gluten
+    - name: Icelandic flatbread
+      description: "With salmon"
+      price: 1200
+      allergens: gluten fish
+
 allergens:
   name: Allergens
   symbol: 📋
@@ -100,7 +108,7 @@ allergens:
       name: Lactose
       symbol: 🥛
     eggs:
-      name: "Eggs<br><br><br><br><br><br><br><br><br><br><br>"
+      name: Eggs
       symbol: 🥚
     # cow:
     #   name: Cow
@@ -114,9 +122,9 @@ allergens:
     # lamb:
     #   name: Lamb
     #   symbol: 🐑
-    # fish:
-    #   name: Fish
-    #   symbol: 🐟
+    fish:
+      name: Fish
+      symbol: 🐟
     # crab:
     #   name: Crab
     #   symbol: 🦀

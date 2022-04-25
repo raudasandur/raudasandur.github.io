@@ -20,7 +20,12 @@
 {% endif %}
 {% if category.items %}
 {% for item in category.items %}
-{% unless item.day and item.day != dotw %}
+{% assign days = item.day | inspect %}
+{% assign not_today = true %}
+{% if days contains dotw %}
+  {% assign not_today = false %}
+{% endif %}
+{% unless item.day and not_today %}
 <table style="width:100%">
 <tr>
   <td><h3 style="margin-top:0;margin-bottom:0">{{ item.name }}</h3></td>
@@ -38,7 +43,7 @@
 </tr>
 {% if item.description %}
 <tr>
-  <td>{{ item.description }}</td>
+  <td>{% if item.day %}{{ date | date: "%A" }}: {% endif %}{{ item.description }}</td>
 {% if item.allergens %}
   <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;">
     <h3 style="margin-top:0;margin-bottom:0">
