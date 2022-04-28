@@ -51,8 +51,15 @@ times:
 #   accent: "#84ABD7"
 
 # Combined
+# colors:
+#   background: "#EBD6C2"
+#   primary: "#996633"
+#   secondary: "#E0C2A3"
+#   accent: "#6699CC"
+
+# Aquarel
 colors:
-  background: "#EBD6C2"
-  primary: "#996633"
-  secondary: "#E0C2A3"
-  accent: "#6699CC"
+  background: "#c7d5e1"
+  primary: "#2e3d56"
+  secondary: "#9fb6d3"
+  accent: "#da9962"
