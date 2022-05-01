@@ -1,0 +1,6 @@
+{% assign photos = site.static_files | where: "image", true %}
+{% for photo in photos %}
+<center>
+  <img src="{{ photo.path }}" width="96%" />
+</center>
+{% endfor %}

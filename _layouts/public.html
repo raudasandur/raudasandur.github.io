@@ -1,3 +1,8 @@
+---
+---
+
+{% assign loc = site.data.lang[page.lang] %}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en-UK" }}">
 <head>
@@ -11,6 +16,14 @@
 	<link rel="stylesheet" href="/assets/css/public.css">
 </head>
 <body>
+	<span style="position:absolute;top:1em;left:50%;transform:translateX(-50%)">
+	{% for lang in site.languages %}
+		{% unless lang == page.lang %}
+			{% assign url_lang = "/" | append: page.lang %}
+			<a href="{{ lang | append: page.url | remove_first: url_lang | absolute_url }}">{{ site.languageIcons[lang] }} {{ site.languageNames[lang] }}</a>
+		{% endunless %}
+	{% endfor %}
+	</span>
 	<div class="container">
 		{% include navbar.html %}
 		{% include banner.html %}
