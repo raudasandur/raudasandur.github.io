@@ -1,7 +1,7 @@
 drinks:
   name: 
     en: Drinks
-    is: Drinks
+    is: Drykkir
   symbol: ☕
   items:
     - name: 
@@ -33,7 +33,7 @@ drinks:
 alcohol:
   name: 
     en: Alcohol (20+)
-    is: Alcohol (20+)
+    is: Áfengi (20+)
   symbol: 🍷
   items:
     - name: 
@@ -47,7 +47,7 @@ alcohol:
 pastry:
   name: 
     en: Pastries
-    is: Pastries
+    is: Bakkelsi
   symbol: 🍰
   items:
     - name: 
@@ -70,7 +70,7 @@ pastry:
 lunch:
   name: 
     en: Lunch
-    is: Lunch
+    is: Hádegisverður
   symbol: 🍽️
   items:
     - name: 
@@ -143,36 +143,36 @@ lunch:
 allergens:
   name: 
     en: Allergens
-    is: Allergens
+    is: Ofnæmisvaldar
   symbol: 📋
   description: 
     en: "Items without lactose, eggs or animals are vegan-friendly!"
-    is: "Items without lactose, eggs or animals are vegan-friendly!"
+    is: "Hlutir án laktósa, eggja eða dýra eru vegan-vænir!"
   legend:
     gluten:
       name: 
         en: Gluten
-        is: Gluten
+        is: Glúten
       symbol: 🍞
     soy:
       name: 
         en: Soy
-        is: Soy
+        is: Soja
       symbol: 🌱
     nuts:
       name: 
         en: Nuts
-        is: Nuts
+        is: Hnetur
       symbol: 🥜
     lactose:
       name: 
         en: Lactose
-        is: Lactose
+        is: Laktósi
       symbol: 🥛
     eggs:
       name: 
         en: Eggs
-        is: Eggs
+        is: Egg
       symbol: 🥚
     # cow:
     #   name: 
@@ -197,7 +197,7 @@ allergens:
     fish:
       name: 
         en: Fish
-        is: Fish
+        is: Fiskur
       symbol: 🐟
     # crab:
     #   name: 
