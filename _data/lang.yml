@@ -21,10 +21,17 @@ en:
       address: Address
       email: Email
       phone: Phone
+    location:
+      title: Location
+      link: Link to interactive map
+      credit: Images provided by
   menu:
     title: Menu
   photos:
     title: Photos
+  footer:
+    made: Made with 💚 and ☕
+    by: by and for the community
 
 is:
   about:
@@ -49,7 +56,14 @@ is:
       address: Heimilisfang
       email: Tölvupóstur
       phone: Sími
+    location:
+      title: Staðsetning
+      link: Tengill á gagnvirkt kort
+      credit: Myndir veittar af
   menu:
     title: Matseðill
   photos:
     title: Myndir
+  footer:
+    made: Gert með 💚 og ☕
+    by: af og fyrir samfélagið

@@ -1,133 +1,212 @@
 drinks:
-  name: Drinks
+  name: 
+    en: Drinks
+    is: Drinks
   symbol: ☕
   items:
-    - name: Coffee
+    - name: 
+        en: Coffee
+        is: Coffee
       price: 350
-    - name: Latte
+    - name: 
+        en: Latte
+        is: Latte
       price: 350
       allergens: soy
-    - name: Espresso
+    - name: 
+        en: Espresso
+        is: Espresso
       price: 350
-    - name: Cappuccino
+    - name: 
+        en: Cappuccino
+        is: Cappuccino
       price: 350
       allergens: soy
-    - name: Tea
+    - name: 
+        en: Tea
+        is: Tea
       price: 350
-    - name: Soda
+    - name: 
+        en: Soda
+        is: Soda
       price: 350
-# cold_drinks:
-#   name: Cold drinks
-#   symbol: 🍹
-#   items:
-#     - name: Iced tea
-#       price: 400
-#       description: Homemade iced tea from local herbs
-#     - name: Lemonade
-#       price: 300
-#       description: With sparkling or flat water
 alcohol:
-  name: Alcohol (20+)
+  name: 
+    en: Alcohol (20+)
+    is: Alcohol (20+)
   symbol: 🍷
   items:
-    - name: Beer
+    - name: 
+        en: Beer
+        is: Beer
       price: 850
-    - name: Wine
+    - name: 
+        en: Wine
+        is: Wine
       price: 850
 pastry:
-  name: Pastries
+  name: 
+    en: Pastries
+    is: Pastries
   symbol: 🍰
   items:
-    - name: Waffles
-      description: Homemade waffles with cream and blueberries
+    - name: 
+        en: Waffles
+        is: Waffles
+      description: 
+        en: Homemade waffles with cream and blueberries
+        is: Homemade waffles with cream and blueberries
       price: 550
       allergens: gluten soy
-    # - name: Non-plant based waffles
-    #   description: Egg waffles with whip cream and hand-picked blueberries
-    #   price: 560
-    #   allergens: gluten lactose eggs
-    - name: Cake of the day
-      description: Homemade chocolate cake
+    - name: 
+        en: Cake of the day
+        is: Cake of the day
+      description: 
+        en: Homemade chocolate cake
+        is: Homemade chocolate cake
       price: 550
       allergens: eggs lactose nuts
       day: 0 1 2 3 4 5 6
 lunch:
-  name: Lunch
+  name: 
+    en: Lunch
+    is: Lunch
   symbol: 🍽️
   items:
-    - name: Soup of the day
-      description: "Carrot soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Carrot soup"
+        is: "Carrot soup"
       price: 1200
       day: 0
-    - name: Soup of the day
-      description: "Pumpkin soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Pumpkin soup"
+        is: "Pumpkin soup"
       price: 1200
       day: 1
-    - name: Soup of the day
-      description: "Icelandic lamb-like soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Icelandic lamb-like soup"
+        is: "Icelandic lamb-like soup"
       price: 1200
       allergens: gluten
       day: 2
-    - name: Soup of the day
-      description: "Icelandic vegetable soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Icelandic vegetable soup"
+        is: "Icelandic vegetable soup"
       price: 1200
       day: 3
-    - name: Soup of the day
-      description: "Rhubarb soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Rhubarb soup"
+        is: "Rhubarb soup"
       price: 1200
       day: 4
-    - name: Soup of the day
-      description: "Tomato soup with cream and basil"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Tomato soup with cream and basil"
+        is: "Tomato soup with cream and basil"
       price: 1200
       allergens: soy
       day: 5
-    - name: Soup of the day
-      description: "Mushroom soup"
+    - name: 
+        en: Soup of the day
+        is: Soup of the day
+      description: 
+        en: "Mushroom soup"
+        is: "Mushroom soup"
       price: 1200
       day: 6
-    - name: Icelandic flatbread
-      description: "With salmon"
+    - name: 
+        en: Icelandic flatbread
+        is: Icelandic flatbread
+      description: 
+        en: "With salmon"
+        is: "With salmon"
       price: 1200
       allergens: gluten fish
 
 allergens:
-  name: Allergens
+  name: 
+    en: Allergens
+    is: Allergens
   symbol: 📋
-  description: "Items without lactose, eggs or animals are vegan-friendly!"
+  description: 
+    en: "Items without lactose, eggs or animals are vegan-friendly!"
+    is: "Items without lactose, eggs or animals are vegan-friendly!"
   legend:
     gluten:
-      name: Gluten
+      name: 
+        en: Gluten
+        is: Gluten
       symbol: 🍞
     soy:
-      name: Soy
+      name: 
+        en: Soy
+        is: Soy
       symbol: 🌱
     nuts:
-      name: Nuts
+      name: 
+        en: Nuts
+        is: Nuts
       symbol: 🥜
     lactose:
-      name: Lactose
+      name: 
+        en: Lactose
+        is: Lactose
       symbol: 🥛
     eggs:
-      name: Eggs
+      name: 
+        en: Eggs
+        is: Eggs
       symbol: 🥚
     # cow:
-    #   name: Cow
+    #   name: 
+        # en: Cow
+        # is: Cow
     #   symbol: 🐮
     # pig:
-    #   name: Pig
+    #   name: 
+        # en: Pig
+        # is: Pig
     #   symbol: 🐷
     # chicken:
-    #   name: Chicken
+    #   name: 
+        # en: Chicken
+        # is: Chicken
     #   symbol: 🐔
     # lamb:
-    #   name: Lamb
+    #   name: 
+        # en: Lamb
+        # is: Lamb
     #   symbol: 🐑
     fish:
-      name: Fish
+      name: 
+        en: Fish
+        is: Fish
       symbol: 🐟
     # crab:
-    #   name: Crab
+    #   name: 
+        # en: Crab
+        # is: Crab
     #   symbol: 🦀
     # shrimp:
-    #   name: Shrimp
+    #   name: 
+        # en: Shrimp
+        # is: Shrimp
     #   symbol: 🦐
+

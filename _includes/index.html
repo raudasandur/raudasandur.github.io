@@ -79,14 +79,14 @@
 
 </div>
 
-<h2>🗺️ Location</h2>
-<center><a href="{{ site.contact.map }}">Link to interactive map</a></center>
+<h2>🗺️ {{ loc.about.location.title }}</h2>
+<center><a href="{{ site.contact.map }}">{{ loc.about.location.link }}</a></center>
 <div class="map">
-<img src="../assets/images/map-iceland.jpg" />
-<img src="../assets/images/map-westfjords.jpg" />
-<img src="../assets/images/map-cafe.jpg" />
+  <img src="{{ "/assets/images/map-iceland.jpg" | absolute_url }}" />
+  <img src="{{ "/assets/images/map-westfjords.jpg" | absolute_url }}" />
+  <img src="{{ "/assets/images/map-cafe.jpg" | absolute_url }}" />
 </div>
 <div style="text-align:center;margin-bottom:1em;font-size:12px">
-Images provided by <a href="https://github.com/maputnik/editor">Maputnik</a><br/>
+{{ loc.about.location.credit }} <a href="https://github.com/maputnik/editor">Maputnik</a><br/>
 <a href="https://www.maptiler.com/copyright/">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>
 </div>

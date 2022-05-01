@@ -8,13 +8,13 @@
 {% for category_hash in site.data.menu %}
 {% assign category = category_hash[1] %}
 <div class="menu-category"><div class="menu-item">
-    <h2><span>{{ category.symbol }}</span> {{ category.name }}</h2>
+    <h2><span>{{ category.symbol }}</span> {{ category.name[page.lang] }}</h2>
 {{ category.description }}
 {% if category.legend %}
 <h3>
 {% for item_hash in category.legend %}
   {% assign item = item_hash[1] %}
-  <code class="symbols">{{ item.symbol}} </code>{{ item.name }}</br>
+  <code class="symbols">{{ item.symbol}} </code>{{ item.name[page.lang] }}</br>
 {% endfor %}
 </h3>
 {% endif %}
@@ -28,7 +28,7 @@
 {% unless item.day and not_today %}
 <table style="width:100%">
 <tr>
-  <td><h3 style="margin-top:0;margin-bottom:0">{{ item.name }}</h3></td>
+  <td><h3 style="margin-top:0;margin-bottom:0">{{ item.name[page.lang] }}</h3></td>
   {% unless item.description %}{% if item.allergens %}
   <td class="symbols" style="vertical-align:middle;text-align:right;width:min-content;">
     <h3 style="margin-top:0;margin-bottom:0">
