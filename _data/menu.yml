@@ -69,8 +69,8 @@ pastry:
       day: 0 1 2 3 4 5 6
 lunch:
   name: 
-    en: Lunch
-    is: Hádegisverður
+    en: Meals
+    is: Máltíðir
   symbol: 🍽️
   items:
     - name: 
@@ -177,17 +177,17 @@ allergens:
     # cow:
     #   name: 
         # en: Cow
-        # is: Cow
+        # is: Kýr
     #   symbol: 🐮
     # pig:
     #   name: 
         # en: Pig
-        # is: Pig
+        # is: Svín
     #   symbol: 🐷
     # chicken:
     #   name: 
         # en: Chicken
-        # is: Chicken
+        # is: Kjúklingur
     #   symbol: 🐔
     # lamb:
     #   name: 
@@ -202,11 +202,11 @@ allergens:
     # crab:
     #   name: 
         # en: Crab
-        # is: Crab
+        # is: Krabbi
     #   symbol: 🦀
     # shrimp:
     #   name: 
         # en: Shrimp
-        # is: Shrimp
+        # is: Rækjur
     #   symbol: 🦐
 

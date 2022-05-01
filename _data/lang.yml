@@ -1,6 +1,6 @@
 en:
   about:
-    title: About
+    title: Home
     about:
       title: About
       content: "A perfect place to relax with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 40 minute drive away from Patreksfjörður and within hiking distance from the Melanes campsite."
@@ -35,7 +35,7 @@ en:
 
 is:
   about:
-    title: Um okkur
+    title: Heim
     about:
       title: Um okkur
       content: "Fullkominn staður til að slaka á með kaffibolla og vöfflu eftir langa göngu á Rauðasandi. Við erum í 40 mínútna akstursfjarlægð frá Patreksfirði og í göngufæri frá tjaldstæðinu Melanesi."
