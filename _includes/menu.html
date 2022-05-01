@@ -9,7 +9,7 @@
 {% assign category = category_hash[1] %}
 <div class="menu-category"><div class="menu-item">
     <h2><span>{{ category.symbol }}</span> {{ category.name[page.lang] }}</h2>
-{{ category.description }}
+{{ category.description[page.lang] }}
 {% if category.legend %}
 <h3>
 {% for item_hash in category.legend %}
@@ -43,7 +43,7 @@
 </tr>
 {% if item.description %}
 <tr>
-  <td>{% if item.day %}{{ date | date: "%A" }}: {% endif %}{{ item.description }}</td>
+  <td>{% if item.day %}{{ date | date: "%A" }}: {% endif %}{{ item.description[page.lang] }}</td>
 {% if item.allergens %}
   <td class="symbols" style="vertical-align:middle;text-align:center;width:fit-content;">
     <h3 style="margin-top:0;margin-bottom:0">
