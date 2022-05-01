@@ -2,8 +2,9 @@
 title: About
 permalink: /
 layout: public
-banner: banner
-banner-offset: 30
+banner: rauda2
+banner-offset: 48
+banner-text: About
 ---
 
 {% comment %} {% assign unix = site.time | date: '%s' | plus: 11256000 %} {% endcomment %}
@@ -38,6 +39,7 @@ A perfect place to relax with a cup of coffee and a waffle after a long walk on 
 
 <div class="menu-category"><div class="menu-item">
 <h2>🕰️ Opening hours</h2>
+<span style="font-size:1.5em">
 {% assign today_times = site.times[dotw] %}
 {% assign tomorrow_times = site.times[ndotw] %}
 {% if unix < day_start %}
@@ -58,6 +60,7 @@ A perfect place to relax with a cup of coffee and a waffle after a long walk on 
   {% assign wait = 24 | minus: time | plus: tomorrow_times.open %}
   <b>Closed!</b> Opening tomorrow in {{ wait }} hour{% if wait > 1 %}s{% endif %}
 {% endif %}
+</span>
 <br/>
 From {{ day_start | date: "%-d %b" }} to {{ day_end | date: "%-d %b" }}
 <table class="timetable">

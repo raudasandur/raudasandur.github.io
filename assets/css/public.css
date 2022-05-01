@@ -1,6 +1,21 @@
 ---
 ---
 
+/* FrenchScriptMT */
+@font-face {
+  font-family: "French Script MT";
+  src: url('../fonts/FrenchScriptMT.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gladista";
+  src: url('../fonts/Gladista.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   color: {{ site.colors.primary }};
   background-color: {{ site.colors.background }};
@@ -23,14 +38,16 @@ a:hover {
 
 h1 {
   padding-bottom: 0.3em;
-  font-size: 1.8em;
+  font-size: 3.5em;
   border-bottom: 1px solid {{ site.colors.secondary }};
+  font-family: "French Script MT", serif;
 }
 
 h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
   border-bottom: 1px solid {{ site.colors.secondary }};
+  font-family: "Gladista", serif;
 }
 
 table.timetable {
@@ -45,13 +62,21 @@ table.timetable {
 .small {
   display: block;
 }
-@media(min-width: 600px) {
+@media(min-width: 640px) {
   .big {
     display: block;
   }
   .small {
     display: none;
   }
+}
+
+.nav-items {
+  font-family: "Gladista", serif;
+  font-size: 0.5em;
+  color: {{ site.colors.secondary }};
+  display: inline;
+  vertical-align: middle;
 }
 
 .container {

@@ -1,13 +1,18 @@
-<h1 class="big" style="border-bottom:none;margin-bottom:0px;padding-bottom:0px;">{{ site.title }}
+<span style="text-align:center">{{ site.lang }}</span>
+<div class="big">
+<h1 style="border-bottom:none;margin-bottom:0.2em;padding-bottom:0px;">{{ site.title }}
 <span style="float:right;">
-  <p style="font-size: 0.8em; color: {{ site.colors.secondary }}; display: inline; vertical-align: middle;">
+  <p class="nav-items">
     {% include nav-items.html %}
   </p>
 </span>
 </h1>
+<img src="../assets/images/div.svg" style="position: absolute; top: 3.5em;width:20.5em" />
+</div>
 <center class="small">
-  <h1 style="padding-bottom: 0px; margin-bottom: 0px; border-bottom: none;">{{ site.title }}</h1>
-  <h1 style="color: {{ site.colors.secondary }};margin-bottom:0px;padding-bottom:0px; margin-top: 0px;border-bottom: none; font-size: 1.5em">
+  <h1 style="padding-bottom: 0px; margin-bottom: 0.2em; border-bottom: none;">{{ site.title }}</h1>
+  <img src="../assets/images/div.svg" style="left:50%;transform:translateX(-50%);position: absolute; top: 3.5em;width:20.5em" />
+  <h1 class="nav-items" style="color: {{ site.colors.secondary }};margin-bottom:0px;padding-bottom:0px; margin-top: 0px;border-bottom: none; font-size: 1.5em">
     {% include nav-items.html %}
   </h1>
 </center>

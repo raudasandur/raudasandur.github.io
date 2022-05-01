@@ -1,10 +1,20 @@
-title: Franska Kaffihúsið
+title: Franska kaffihúsið
 
 contact:
   tel: +354 123 4567
   email: contact@franskakaffihusid.is
   address: Kirkjuvammur,<br/>451 Rauðasandur,<br/>Vesturbyggð
   map: https://osm.org/go/efmp~2u?m=
+
+languages: ["en", "is"]
+exclude_from_localizations: ["assets"]
+defaultLang: en
+languageNames:
+  en: English
+  is: Íslensku
+languageIcons:
+  en: 🇬🇧
+  is: 🇮🇸
 
 defaults:
   - scope:
