@@ -3,7 +3,7 @@ en:
     title: Home
     about:
       title: About
-      content: "A perfect place to relax with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 40 minute drive away from Patreksfjörður and within hiking distance from the Melanes campsite."
+      content: "A perfect place to relax with a cup of coffee and a waffle after a long walk on Rauðasandur. We are a 45 minute drive away from Patreksfjörður and within hiking distance from the Melanes campsite."
     hours:
       title: Opening hours
       open: Open!
@@ -27,6 +27,7 @@ en:
       credit: Images provided by
   menu:
     title: Menu
+    description: "All items and prices are subject change until the cafe opens on the 1st of June."
   photos:
     title: Photos
   footer:
@@ -38,7 +39,7 @@ is:
     title: Heim
     about:
       title: Um okkur
-      content: "Fullkominn staður til að slaka á með kaffibolla og vöfflu eftir langa göngu á Rauðasandi. Við erum í 40 mínútna akstursfjarlægð frá Patreksfirði og í göngufæri frá tjaldstæðinu Melanesi."
+      content: "Fullkominn staður til að slaka á með kaffibolla og vöfflu eftir langa göngu á Rauðasandi. Við erum í 45 mínútna akstursfjarlægð frá Patreksfirði og í göngufæri frá tjaldstæðinu Melanesi."
     hours:
       title: Opnunartímar
       open: Opið!
@@ -62,6 +63,7 @@ is:
       credit: Myndir veittar af
   menu:
     title: Matseðill
+    description: "Allir hlutir og verð eru með fyrirvara um breytingar þar til kaffihúsið opnar 1. júní."
   photos:
     title: Myndir
   footer:

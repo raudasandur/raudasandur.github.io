@@ -1,17 +1,9 @@
 title: Franska kaffihúsið
 
 contact:
-  en:
-    phone: Phone
-    email: Email
-    address: Address
-  en:
-    phone: Síma
-    email: Tölvupósti
-    address: Heimilisfang
-  tel: +354 123 4567
-  email: contact@franskakaffihusid.is
-  address: Kirkjuvammur,<br/>451 Rauðasandur,<br/>Vesturbyggð
+  tel: +354 791 7791
+  email: info@franska-kaffihusid.is
+  address: Kirkjuhvammur,<br/>451 Saurbær,<br/>Vestfirðir
   map: https://osm.org/go/efmp~2u?m=
 
 languages: ["en", "is"]

@@ -1,7 +1,11 @@
+{% assign loc = site.data.lang[page.lang] %}
+
 {% assign unix = site.time | date: '%s' %}
 {% assign time = unix | plus: 0 | date: '%H:%M' %}
 {% assign date = unix | date: "%Y-%m-%d" %} 
 {% assign dotw = unix | date: '%w' | minus: 1 | modulo: 7 %}
+
+{{ loc.menu.description }}
 
 <div class="menu">
 

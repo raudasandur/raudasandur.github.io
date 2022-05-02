@@ -7,29 +7,29 @@ drinks:
     - name: 
         en: Coffee
         is: Coffee
-      price: 350
+      price: "-"
     - name: 
         en: Latte
         is: Latte
-      price: 350
+      price: "-"
       allergens: soy
     - name: 
         en: Espresso
         is: Espresso
-      price: 350
+      price: "-"
     - name: 
         en: Cappuccino
         is: Cappuccino
-      price: 350
+      price: "-"
       allergens: soy
     - name: 
         en: Tea
         is: Tea
-      price: 350
+      price: "-"
     - name: 
         en: Soda
         is: Soda
-      price: 350
+      price: "-"
 alcohol:
   name: 
     en: Alcohol (20+)
@@ -39,11 +39,11 @@ alcohol:
     - name: 
         en: Beer
         is: Beer
-      price: 850
+      price: "-"
     - name: 
         en: Wine
         is: Wine
-      price: 850
+      price: "-"
 pastry:
   name: 
     en: Pastries
@@ -56,16 +56,23 @@ pastry:
       description: 
         en: Homemade waffles with cream and blueberries
         is: Homemade waffles with cream and blueberries
-      price: 550
+      price: "-"
       allergens: gluten soy
+    - name:
+        en: French chocolate cake
+        is: French chocolate cake
+      description: 
+        en: With fresh strawberries
+        is: With fresh strawberries
+      allergens: eggs lactose
+      price: "-"
     - name: 
         en: Cake of the day
         is: Cake of the day
       description: 
-        en: Homemade chocolate cake
-        is: Homemade chocolate cake
-      price: 550
-      allergens: eggs lactose nuts
+        en: Different cake every day
+        is: Different cake every day
+      price: "-"
       day: 0 1 2 3 4 5 6
 lunch:
   name: 
@@ -77,67 +84,75 @@ lunch:
         en: Soup of the day
         is: Soup of the day
       description: 
-        en: "Carrot soup"
-        is: "Carrot soup"
-      price: 1200
-      day: 0
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Pumpkin soup"
-        is: "Pumpkin soup"
-      price: 1200
-      day: 1
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Icelandic lamb-like soup"
-        is: "Icelandic lamb-like soup"
-      price: 1200
-      allergens: gluten
-      day: 2
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Icelandic vegetable soup"
-        is: "Icelandic vegetable soup"
-      price: 1200
-      day: 3
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Rhubarb soup"
-        is: "Rhubarb soup"
-      price: 1200
-      day: 4
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Tomato soup with cream and basil"
-        is: "Tomato soup with cream and basil"
-      price: 1200
-      allergens: soy
-      day: 5
-    - name: 
-        en: Soup of the day
-        is: Soup of the day
-      description: 
-        en: "Mushroom soup"
-        is: "Mushroom soup"
-      price: 1200
-      day: 6
+        en: "Different soup everyday"
+        is: "Different soup everyday"
+      price: "-"
+      day: 0 1 2 3 4 5 6
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Carrot soup"
+    #     is: "Carrot soup"
+    #   price: "-"
+    #   day: 0
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Pumpkin soup"
+    #     is: "Pumpkin soup"
+    #   price: "-"
+    #   day: 1
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Icelandic lamb-like soup"
+    #     is: "Icelandic lamb-like soup"
+    #   price: "-"
+    #   allergens: gluten
+    #   day: 2
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Icelandic vegetable soup"
+    #     is: "Icelandic vegetable soup"
+    #   price: "-"
+    #   day: 3
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Rhubarb soup"
+    #     is: "Rhubarb soup"
+    #   price: "-"
+    #   day: 4
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Tomato soup with cream and basil"
+    #     is: "Tomato soup with cream and basil"
+    #   price: "-"
+    #   allergens: soy
+    #   day: 5
+    # - name: 
+    #     en: Soup of the day
+    #     is: Soup of the day
+    #   description: 
+    #     en: "Mushroom soup"
+    #     is: "Mushroom soup"
+    #   price: "-"
+    #   day: 6
     - name: 
         en: Icelandic flatbread
         is: Icelandic flatbread
       description: 
         en: "With salmon"
         is: "With salmon"
-      price: 1200
+      price: "-"
       allergens: gluten fish
 
 allergens:
