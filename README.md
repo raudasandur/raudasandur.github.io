@@ -22,4 +22,6 @@ No bundler needed
 
 Copyright © 2022 [Muon](https://gitea.muon.host/muon)
 
-This project is [GNU AGPLv3](LICENSE.md) licensed.
+This project is [GNU AGPLv3](LICENSE.md) licensed
+
+Images are subject to their own copyright
