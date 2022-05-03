@@ -16,6 +16,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Amarillo";
+  src: url('../fonts/Amarillo.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Charline";
+  src: url('../fonts/Charline.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spring in May";
+  src: url('../fonts/Spring in May.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   color: {{ site.colors.primary }};
   background-color: {{ site.colors.background }};
@@ -45,9 +66,10 @@ h1 {
 
 h2 {
   padding-bottom: 0.3em;
-  font-size: 1.5em;
+  margin-top: 0.5em;
+  font-size: 1.3em;
   border-bottom: 1px solid {{ site.colors.secondary }};
-  font-family: "Gladista", serif;
+  font-family: "Charline", serif;
 }
 
 @media(max-width: 900px) {
@@ -55,9 +77,10 @@ h2 {
     text-align: center;
   }
 }
+
 .symbol {
   display: inline-block;
-  height: 1em;
+  height: 1.0em;
 }
 
 table.timetable {
@@ -82,7 +105,7 @@ table.timetable {
 }
 
 .nav-items {
-  font-family: "Gladista", serif;
+  font-family: "Charline", serif;
   font-size: 0.5em;
   color: {{ site.colors.secondary }};
   display: inline;
