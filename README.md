@@ -1,5 +1,7 @@
 # Franska kaffihúsið
 
+![Preview](https://repository-images.githubusercontent.com/482051493/3255eec3-2079-4f58-adc9-a2be41b27d3b)
+
 A static, responsive, scriptless, multilingual website made with pure Jekyll on GitHub Pages for a remote coffeeshop in the Westfjords, Iceland.
 
 Available on [franska-kaffihusid.is](https://www.franska-kaffihusid.is/)
