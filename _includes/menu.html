@@ -12,7 +12,7 @@
 {% for category_hash in site.data.menu %}
 {% assign category = category_hash[1] %}
 <div class="menu-category"><div class="menu-item">
-    <h2><span>{{ category.symbol }}</span> {{ category.name[page.lang] }}</h2>
+    <h2><span class="symbols">{{ category.symbol }}</span> {{ category.name[page.lang] }}</h2>
 {{ category.description[page.lang] }}
 {% if category.legend %}
 <h3>

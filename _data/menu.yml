@@ -41,8 +41,8 @@ alcohol:
         is: Bjór
       price: "-"
     - name: 
-        en: Wine (0.25l)
-        is: Vín (0.25l)
+        en: Wine
+        is: Vín
       price: "-"
 pastry:
   name: 
@@ -61,6 +61,9 @@ pastry:
     - name:
         en: French chocolate cake
         is: Frönsk súkkulaðikaka
+      description:
+        en: With cream
+        is: Með rjóma
       allergens: eggs lactose
       price: "-"
     - name: 
