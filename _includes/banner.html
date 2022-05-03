@@ -1,5 +1,5 @@
 <div class="banner">
 {% assign img_url = "/assets/images/" | append: page.banner | append: ".jpg" %}
-<img src="{{ img_url | absolute_url }}" width="100%" height="100px" style="object-fit:cover;object-position: 0 {{ page.banner-offset }}%;margin-top:0.6em;" />
+<img itemprop="image" src="{{ img_url | absolute_url }}" width="100%" height="100px" style="object-fit:cover;object-position: 0 {{ page.banner-offset }}%;margin-top:0.6em;" />
 <h1 class="nav-items" style="font-size:2.5em;white-space:nowrap">{{ page.banner-text }}</h1>
 </div>

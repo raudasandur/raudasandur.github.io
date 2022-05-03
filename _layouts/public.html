@@ -2,6 +2,7 @@
 ---
 
 {% assign loc = site.data.lang[page.lang] %}
+{% assign img_url = "/assets/images/" | append: page.banner | append: ".jpg" | absolute_url %}
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en-UK" }}">
@@ -11,6 +12,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta name="description" content="{{ loc.about.about.content }}">
+	<meta name="keywords" content="{{ loc.seo.keywords }}">
+
+	<meta property="og:title" content="{{ site.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:image" content="{{ img_url }}" />
+
+	{% for lang in site.languages %}
+		{% assign url_lang = "/" | append: page.lang %}
+		<link rel="alternate" hreflang="{{ lang }}" href="{{ lang | append: page.url | remove_first: url_lang | absolute_url }}" />
+	{% endfor %}
+
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
 	<link rel="stylesheet" href="/assets/css/normalize.css">
 	<link rel="stylesheet" href="/assets/css/public.css">
@@ -24,7 +38,7 @@
 		{% endunless %}
 	{% endfor %}
 	</span>
-	<div class="container">
+	<div itemscope itemtype="https://schema.org/CafeOrCoffeeShop" class="container">
 		{% include navbar.html %}
 		{% include banner.html %}
 		<div class="content">

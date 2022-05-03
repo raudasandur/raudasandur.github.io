@@ -1,3 +1,3 @@
 <a href="{{ "/" | append: page.lang | append: "/" | absolute_url }}" {% if page.title == loc.about.title %}style="text-decoration:underline"{% endif %}>{{ loc.about.title }}</a> |
-<a href="{{ "/" | append: page.lang | append: "/menu/" | absolute_url }}" {% if page.title == loc.menu.title %}style="text-decoration:underline"{% endif %}>{{ loc.menu.title }}</a> |
+<a itemprop="hasMenu" href="{{ "/" | append: page.lang | append: "/menu/" | absolute_url }}" {% if page.title == loc.menu.title %}style="text-decoration:underline"{% endif %}>{{ loc.menu.title }}</a> |
 <a href="{{ "/" | append: page.lang | append: "/photos/" | absolute_url }}" {% if page.title == loc.photos.title %}style="text-decoration:underline"{% endif %}>{{ loc.photos.title }}</a>

@@ -63,14 +63,26 @@
 {% endif %}
 </span>
 <br/>
-{{ loc.about.hours.from }} {{ day_start | date: "%-d %b" }} {{ loc.about.hours.to }} {{ day_end | date: "%-d %b" }}
+<span itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+  {{ loc.about.hours.from }} 
+  <time itemprop="validFrom" datetime="{{ day_start | date: "%Y-%m-%d" }}">
+  {{ day_start | date: "%-d %b" }}
+  </time>
+  {{ loc.about.hours.to }}
+  <time itemprop="validFrom" datetime="{{ day_end | date: "%Y-%m-%d" }}">
+  {{ day_end | date: "%-d %b" }}
+  </time>
+</span>
 <table class="timetable">
 {% for time in site.times %}
-<tr>
+<tr itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
   {% assign monday_offset = dotw | times: 86400 %} 
   {% assign day = forloop.index0 | times: 86400 %}
   {% assign day = unix | minus: monday_offset | plus: day | date: "%Y-%m-%d" %}
-  <th>{% if dotw == forloop.index0 %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>{{ time.open }}-{{ time.close }}</td>
+  <th itemprop="dayOfWeek" href="https://schema.org/{{ day | date: '%A'}}">{% if dotw == forloop.index0 %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>
+  <time itemprop="opens" content="{{ time.open }}:00">{{ time.open }}</time>-
+  <time itemprop="closes" content="{{ time.close }}:00">{{ time.close }}
+</td>
 </tr>
 {% endfor %}
 </table>
@@ -83,9 +95,24 @@
       <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
     </h2></center>
 <table class="contact">
-  <tr><th style="padding-top:0">{{ loc.about.contact.address }}</th><td style="padding-top:0"><a href="{{ site.contact.map }}">{{ site.contact.address }}</a></td></tr>
-  <tr><th>{{ loc.about.contact.email }}</th><td><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></td></tr>
-  <tr style="border-bottom: none;"><th>{{ loc.about.contact.phone }}</th><td><a href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a></td></tr>
+  <tr><th style="padding-top:0">{{ loc.about.contact.address }}</th>
+    <td itemprop="location" itemscope itemtype="https://schema.org/PostalAddress" style="padding-top:0"><a href="{{ site.contact.map }}">
+        <span itemprop="streetAddress">
+          {{ site.contact.address.street }}
+        </span>,<br/>
+        <span itemprop="postalCode">
+          {{ site.contact.address.postal }}
+        </span>
+        <span itemprop="addressLocality">
+          {{ site.contact.address.locality }}
+        </span><br/>
+        <span itemprop="addressRegion">
+          {{ site.contact.address.region }}
+        </span>
+      </a></td>
+  </tr>
+  <tr><th>{{ loc.about.contact.email }}</th><td><a itemprop="email" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></td></tr>
+  <tr style="border-bottom: none;"><th>{{ loc.about.contact.phone }}</th><td><a itemprop="phone" href="tel:{{ site.contact.tel }}">{{ site.contact.tel }}</a></td></tr>
 </table>
 </div></div>
 
@@ -95,7 +122,7 @@
       {{ loc.about.location.title }}
       <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
     </h2>
-<center><a href="{{ site.contact.map }}">{{ loc.about.location.link }}</a></center>
+<center><a itemprop="hasMap" href="{{ site.contact.map }}">{{ loc.about.location.link }}</a></center>
 <div class="map">
   <img src="{{ "/assets/images/map-iceland.jpg" | absolute_url }}" />
   <img src="{{ "/assets/images/map-westfjords.jpg" | absolute_url }}" />

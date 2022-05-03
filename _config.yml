@@ -3,7 +3,11 @@ title: Franska kaffihúsið
 contact:
   tel: +354 791 7791
   email: info@franska-kaffihusid.is
-  address: Kirkjuhvammur,<br/>451 Saurbær,<br/>Vestfirðir
+  address:
+    street: Kirkjuhvammur
+    postal: 451
+    locality: Saurbær
+    region: Vestfirðir
   map: https://osm.org/go/efmp~2u?m=
 
 languages: ["en", "is"]

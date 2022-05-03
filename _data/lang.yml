@@ -1,9 +1,11 @@
 en:
+  seo:
+    keywords: "Franska kaffihúsið,Rauðasandur,Raudasandur,Rauðisandur,Raudisandur,Coffee,Coffeeshop,Cafe,Food,Restaurant,Menu,Opening hours,Tea,Waffles,Soup,Beer,Wine"
   about:
     title: Home
     about:
       title: About
-      content: "A perfect place to relax with a cup of coffee and a waffle after a long walk on Rauðasandur. We are located next to the beach, a 45 minute drive away from Patreksfjörður and within hiking distance from the Melanes campsite."
+      content: "A perfect place to relax with a cup of coffee, homemade cake, waffles or a light meal. Enjoy the beautiful scenery over the light reddish beach which is the home to a seal colony, a summer spot for sheep and surrounded by dark cliffs. We are located next to the beach, a 45 minute drive away from Patreksfjörður and within hiking distance from the Melanes campsite."
     hours:
       title: Opening hours
       open: Open!
@@ -35,11 +37,13 @@ en:
     by: by and for the community
 
 is:
+  seo:
+    keywords: "Franska kaffihúsið,Rauðasandur,Raudasandur,Rauðisandur,Raudisandur,Kaffi,Kaffihús,Kaffihús,Matur,Veitingastaður,Matseðill,Opnunartími,Te,Vöfflur,Súpa,Bjór,Vín"
   about:
     title: Heim
     about:
       title: Um okkur
-      content: "Fullkominn staður til að slaka á með kaffibolla og vöfflu eftir langa göngu á Rauðasandi. Við erum staðsett við ströndina, í 45 mínútna akstursfjarlægð frá Patreksfirði og í göngufæri frá tjaldstæðinu Melanes."
+      content: "Fullkominn staður til að slaka á með kaffibolla, heimabakaða köku, vöfflur eða létta máltíð. Njóttu fallegs landslags yfir ljósrauðleitri ströndinni sem er heimili selabyggðar, sumarstaður fyrir sauðfé og umkringdur dimmum klettum. Við erum staðsett við ströndina, í 45 mínútna akstursfjarlægð frá Patreksfirði og í göngufæri frá tjaldstæðinu Melanes."
     hours:
       title: Opnunartímar
       open: Opið!
