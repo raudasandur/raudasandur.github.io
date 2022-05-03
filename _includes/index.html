@@ -80,8 +80,7 @@
   {% assign day = forloop.index0 | times: 86400 %}
   {% assign day = unix | minus: monday_offset | plus: day | date: "%Y-%m-%d" %}
   <th itemprop="dayOfWeek" href="https://schema.org/{{ day | date: '%A'}}">{% if dotw == forloop.index0 %}<u>{% endif %}{{ day | date: '%a' }}{% if day == date %}</u>{% endif %}</th><td>
-  <time itemprop="opens" content="{{ time.open }}:00">{{ time.open }}</time>-
-  <time itemprop="closes" content="{{ time.close }}:00">{{ time.close }}
+  <time itemprop="opens" content="{{ time.open }}:00">{{ time.open }}</time>-<time itemprop="closes" content="{{ time.close }}:00">{{ time.close }}
 </td>
 </tr>
 {% endfor %}
