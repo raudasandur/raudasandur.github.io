@@ -50,6 +50,16 @@ h2 {
   font-family: "Gladista", serif;
 }
 
+@media(max-width: 900px) {
+  h2.wide {
+    text-align: center;
+  }
+}
+.symbol {
+  display: inline-block;
+  height: 1em;
+}
+
 table.timetable {
   font-family: "Courier", monospace;
   font-size: 1.2em;
@@ -62,7 +72,7 @@ table.timetable {
 .small {
   display: block;
 }
-@media(min-width: 640px) {
+@media(min-width: 900px) {
   .big {
     display: block;
   }

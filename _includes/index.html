@@ -24,14 +24,22 @@
 <div class="menu">
 
 <div class="menu-category"><div class="menu-item">
-  <h2>☕ {{ loc.about.about.title }}</h2>
+    <center><h2>
+      <img class="symbol" src="{{ "/assets/images/symbol-left.png" | absolute_url }}">
+      {{ loc.about.about.title }}
+      <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
+    </h2></center>
 <p style="text-align: left">
   {{ loc.about.about.content }}
 </p>
 </div></div>
 
 <div class="menu-category"><div class="menu-item">
-<h2>🕰️ {{ loc.about.hours.title }}</h2>
+    <center><h2>
+      <img class="symbol" src="{{ "/assets/images/symbol-left.png" | absolute_url }}">
+      {{ loc.about.hours.title }}
+      <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
+    </h2></center>
 <span style="font-size:1.5em">
 {% assign today_times = site.times[dotw] %}
 {% assign tomorrow_times = site.times[ndotw] %}
@@ -69,7 +77,11 @@
 </div></div>
 
 <div class="menu-category"><div class="menu-item">
-<h2>🙋 {{ loc.about.contact.title }}</h2>
+    <center><h2>
+      <img class="symbol" src="{{ "/assets/images/symbol-left.png" | absolute_url }}">
+      {{ loc.about.contact.title }}
+      <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
+    </h2></center>
 <table class="contact">
   <tr><th style="padding-top:0">{{ loc.about.contact.address }}</th><td style="padding-top:0"><a href="{{ site.contact.map }}">{{ site.contact.address }}</a></td></tr>
   <tr><th>{{ loc.about.contact.email }}</th><td><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></td></tr>
@@ -78,8 +90,11 @@
 </div></div>
 
 </div>
-
-<h2>🗺️ {{ loc.about.location.title }}</h2>
+    <h2 class="wide">
+      <img class="symbol" src="{{ "/assets/images/symbol-left.png" | absolute_url }}">
+      {{ loc.about.location.title }}
+      <img class="symbol" src="{{ "/assets/images/symbol-right.png" | absolute_url }}">
+    </h2>
 <center><a href="{{ site.contact.map }}">{{ loc.about.location.link }}</a></center>
 <div class="map">
   <img src="{{ "/assets/images/map-iceland.jpg" | absolute_url }}" />

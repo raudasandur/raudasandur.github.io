@@ -6,7 +6,7 @@ drinks:
   items:
     - name: 
         en: Coffee
-        is: Coffee
+        is: Kaffi
       price: "-"
     - name: 
         en: Latte
@@ -24,11 +24,11 @@ drinks:
       allergens: soy
     - name: 
         en: Tea
-        is: Tea
+        is: Te
       price: "-"
     - name: 
         en: Soda
-        is: Soda
+        is: Gos
       price: "-"
 alcohol:
   name: 
@@ -38,11 +38,11 @@ alcohol:
   items:
     - name: 
         en: Beer
-        is: Beer
+        is: Bjór
       price: "-"
     - name: 
-        en: Wine
-        is: Wine
+        en: Wine (0.25l)
+        is: Vín (0.25l)
       price: "-"
 pastry:
   name: 
@@ -54,24 +54,18 @@ pastry:
         en: Waffles
         is: Waffles
       description: 
-        en: Homemade waffles with cream and blueberries
-        is: Homemade waffles with cream and blueberries
+        en: With cream and jam
+        is: Með rjóma og sultu
       price: "-"
       allergens: gluten soy
     - name:
         en: French chocolate cake
-        is: French chocolate cake
-      description: 
-        en: With fresh strawberries
-        is: With fresh strawberries
+        is: Frönsk súkkulaðikaka
       allergens: eggs lactose
       price: "-"
     - name: 
         en: Cake of the day
-        is: Cake of the day
-      description: 
-        en: Different cake every day
-        is: Different cake every day
+        is: Kaka dagsins
       price: "-"
       day: 0 1 2 3 4 5 6
 lunch:
@@ -81,11 +75,16 @@ lunch:
   symbol: 🍽️
   items:
     - name: 
-        en: Soup of the day
-        is: Soup of the day
+        en: Icelandic flatbread
+        is: Hveitikökur
       description: 
-        en: "Different soup everyday"
-        is: "Different soup everyday"
+        en: With salmon
+        is: Með laxi
+      price: "-"
+      allergens: gluten fish
+    - name: 
+        en: Soup of the day
+        is: Súpa dagsins
       price: "-"
       day: 0 1 2 3 4 5 6
     # - name: 
@@ -146,14 +145,6 @@ lunch:
     #     is: "Mushroom soup"
     #   price: "-"
     #   day: 6
-    - name: 
-        en: Icelandic flatbread
-        is: Icelandic flatbread
-      description: 
-        en: "With salmon"
-        is: "With salmon"
-      price: "-"
-      allergens: gluten fish
 
 allergens:
   name: 
