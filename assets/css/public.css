@@ -106,10 +106,44 @@ table.timetable {
 
 .nav-items {
   font-family: "Charline", serif;
-  font-size: 0.5em;
+  font-size: 1.5em;
   color: {{ site.colors.secondary }};
-  display: inline;
-  vertical-align: middle;
+  border-bottom: none;
+}
+.ornament {
+  position: absolute;
+  top: 3.5em;
+  width: 20.5em;
+}
+.title {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+@media(min-width: 900px) {
+  .title {
+    margin-bottom: 0.2em;
+  }
+  .nav-items {
+    position: absolute;
+    top: 1em;
+    right: 16px;
+  }
+}
+@media(max-width: 900px) {
+  .title {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  .ornament {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-items {
+    margin-bottom: 0px;
+    padding-bottom:0px;
+    margin-top: 0px;
+    text-align: center;
+  }
 }
 
 .container {
@@ -140,7 +174,7 @@ table.timetable {
   text-align: center;
 }
 
-.banner > h1 {
+.banner > h2 {
   border: none;
   color: {{ site.colors.background }};
   /* text-stroke: 2px {{ site.colors.primary }}; */
@@ -152,7 +186,7 @@ table.timetable {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -75%);
+  transform: translate(-50%, -60%);
 }
 
 .content {
