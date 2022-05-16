@@ -72,6 +72,7 @@
   <time itemprop="validFrom" datetime="{{ day_end | date: "%Y-%m-%d" }}">
   {{ day_end | date: "%-d %b" }}
   </time>
+  {{ day_end | date: "%Y" }}
 </span>
 <table class="timetable">
 {% for time in site.times %}
