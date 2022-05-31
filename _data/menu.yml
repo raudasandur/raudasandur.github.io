@@ -5,31 +5,41 @@ drinks:
   symbol: ☕
   items:
     - name: 
-        en: Coffee
-        is: Kaffi
-      price: "-"
+        en: Coffee/Tea/Espresso
+        is: Kaffi/Te/Espresso
+      price: 500
     - name: 
-        en: Latte
-        is: Latte
-      price: "-"
-      allergens: soy
+        en: Latte/Cappuccino
+        is: Latte/Cappuccino
+      description:
+        en: With soy milk or cow's milk
+        is: Með sojamjólk eða kúamjólk
+      price: 650
+      allergens: soy lactose
     - name: 
-        en: Espresso
-        is: Espresso
-      price: "-"
+        en: Swiss mocha
+        is: Swiss mokka
+      description:
+        en: With soy milk or cow's milk
+        is: Með sojamjólk eða kúamjólk
+      price: 750
+      allergens: soy lactose
     - name: 
-        en: Cappuccino
-        is: Cappuccino
-      price: "-"
-      allergens: soy
-    - name: 
-        en: Tea
-        is: Te
-      price: "-"
+        en: Hot chocolate
+        is: Heitt súkkulaði
+      description:
+        en: With soy milk or cow's milk
+        is: Með sojamjólk eða kúamjólk
+      price: 700
+      allergens: soy lactose
     - name: 
         en: Soda
         is: Gos
-      price: "-"
+      price: 450
+    - name: 
+        en: Juice
+        is: Ávaxtasafi
+      price: 350
 alcohol:
   name: 
     en: Alcohol (20+)
@@ -37,13 +47,19 @@ alcohol:
   symbol: 🍷
   items:
     - name: 
-        en: Beer
-        is: Bjór
-      price: "-"
+        en: Malt/Pilsner
+        is: Malt/Pilsner
+      price: 550
+      allergens: gluten
     - name: 
-        en: Wine
-        is: Vín
-      price: "-"
+        en: Beer/Cider
+        is: Bjór/Cider
+      price: 1100
+      allergens: gluten
+    - name: 
+        en: White/Red wine
+        is: Hvítvín/Rauðvín
+      price: 1300
 pastry:
   name: 
     en: Pastries
@@ -168,11 +184,11 @@ allergens:
         en: Soy
         is: Soja
       symbol: 🌱
-    nuts:
-      name: 
-        en: Nuts
-        is: Hnetur
-      symbol: 🥜
+    # nuts:
+    #   name: 
+    #     en: Nuts
+    #     is: Hnetur
+    #   symbol: 🥜
     lactose:
       name: 
         en: Lactose

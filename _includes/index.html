@@ -45,11 +45,11 @@
 {% assign tomorrow_times = site.times[ndotw] %}
 {% if unix < day_start %}
   {% assign wait = day_start | minus: unix %}
-  {% assign wait = wait | divided_by: 86400 %}
+  {% assign wait = wait | divided_by: 86400 | plus: 1 %}
 <b>{{ loc.about.hours.closed }}</b> {{ loc.about.hours.opening }} {{ wait }} {% if wait > 1 %}{{ loc.about.hours.days }}{% else %}{{ loc.about.hours.day }}{% endif %}
 {% elsif unix > day_end %}
   {% assign wait = day_start | plus: 31536000 | minus: unix %}
-  {% assign wait = wait | divided_by: 86400 %}
+  {% assign wait = wait | divided_by: 86400 | plus: 1 %}
   <b>{{ loc.about.hours.closed }}</b> {{ loc.about.hours.opening }} {{ wait }} {% if wait > 1 %}{{ loc.about.hours.days }}{% else %}{{ loc.about.hours.day }}{% endif %}
 {% elsif time < today_times.open %}
   {% assign wait = today_times.open | minus: time %}
