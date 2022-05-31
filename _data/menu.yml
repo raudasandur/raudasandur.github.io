@@ -19,19 +19,13 @@ drinks:
     - name: 
         en: Swiss mocha
         is: Swiss mokka
-      description:
-        en: With soy milk or cow's milk
-        is: Með sojamjólk eða kúamjólk
       price: 750
-      allergens: soy lactose
+      allergens: lactose
     - name: 
         en: Hot chocolate
         is: Heitt súkkulaði
-      description:
-        en: With soy milk or cow's milk
-        is: Með sojamjólk eða kúamjólk
       price: 700
-      allergens: soy lactose
+      allergens: lactose
     - name: 
         en: Soda
         is: Gos
@@ -66,27 +60,46 @@ pastry:
     is: Bakkelsi
   symbol: 🍰
   items:
-    - name: 
-        en: Waffles
-        is: Vöfflur
-      description: 
-        en: With cream and jam
-        is: Með rjóma og sultu
-      price: "-"
-      allergens: gluten soy
     - name:
         en: French chocolate cake
         is: Frönsk súkkulaðikaka
       description:
         en: With cream
         is: Með rjóma
-      allergens: eggs lactose
-      price: "-"
+      allergens: gluten eggs lactose
+      price: 1200
+    - name: 
+        en: Waffles
+        is: Vöfflur
+      description: 
+        en: With cream and jam
+        is: Með rjóma og sultu
+      price: 1200
+      allergens: gluten eggs lactose
     - name: 
         en: Cake of the day
         is: Kaka dagsins
-      price: "-"
-      day: 0 1 2 3 4 5 6
+      price: 1850
+dessert:
+  name: 
+    en: Desserts
+    is: Eftirréttir
+  symbol: 🍦
+  items:
+    - name: 
+        en: Skyr with cream
+        is: Skyr með rjóma
+      price: 950
+      allergens: lactose
+    - name: 
+        en: Ice-cream cone
+        is: Ístoppur
+      price: 800
+      allergens: lactose
+    - name: 
+        en: Popsicle
+        is: Frostpinni
+      price: 500
 lunch:
   name: 
     en: Meals
@@ -94,18 +107,17 @@ lunch:
   symbol: 🍽️
   items:
     - name: 
-        en: Icelandic flatbread
-        is: Hveitikökur
+        en: Traditional bread
+        is: Hveitikaka
       description: 
-        en: With salmon
-        is: Með laxi
-      price: "-"
+        en: With smoked trout
+        is: Með reyktum silung
+      price: 900
       allergens: gluten fish
     - name: 
         en: Soup of the day
         is: Súpa dagsins
-      price: "-"
-      day: 0 1 2 3 4 5 6
+      price: 1850
     # - name: 
     #     en: Soup of the day
     #     is: Soup of the day
@@ -171,8 +183,8 @@ allergens:
     is: Ofnæmisvaldar
   symbol: 📋
   description: 
-    en: "Items without lactose, eggs or animals are vegan-friendly!"
-    is: "Hlutir án laktósa, eggja eða dýra eru vegan-vænir!"
+    en: "Please ask for vegan options"
+    is: "Vinsamlegast biðjið um vegan valkosti"
   legend:
     gluten:
       name: 
