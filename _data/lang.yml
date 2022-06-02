@@ -30,7 +30,7 @@ en:
       credit: Images provided by
   menu:
     title: Menu
-    description: "All items and prices are subject to change until the cafe opens on the 1st of June."
+    description: ""
   photos:
     title: Photos
   footer:
@@ -69,7 +69,7 @@ is:
       credit: Myndir veittar af
   menu:
     title: Matseðill
-    description: "Allir hlutir og verð geta breyst þar til kaffihúsið opnar 1. júní."
+    description: ""
   photos:
     title: Myndir
   footer:
