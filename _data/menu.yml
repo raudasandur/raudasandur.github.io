@@ -79,7 +79,7 @@ pastry:
     - name: 
         en: Cake of the day
         is: Kaka dagsins
-      price: 1850
+      price: 1100
 dessert:
   name: 
     en: Desserts
